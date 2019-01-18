@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="affichageCode.css"/>
+<script type="text/javascript" src="affichageCode.js"></script>
+<title>Passage de paramètres</title>
+</head>
+<body>
+<h2>passage par r&eacute;f&eacute;rence de tableaux</h2>
+<script>
+	function addTo(tab,val) {
+		tab[0] = tab[0] + val;
+		tab[1] = tab[1] + val;
+		tab[2] = tab[2] + val;
+	}
+	var t = [1,2,3];
+
+	document.write("tableau initial = "+t);
+	document.write("<br/>");
+	addTo(t,5);
+	document.write("tableau apr&egrave;s addTo = "+t);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+	<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Calcul de factorielles</title>
+	</head>
+
+	<body>
+		<h2>Table de factorielles</h2>
+		<script>
+			  document.write("<table>");
+			  document.write("<tr>");
+
+			  var fact = 1;
+			  for (var i=1; i<10; i++) {
+					  fact = fact*i;
+					  document.write("<td>" +i+ "! = " +fact+ "</td>");
+					  console.log("un tour de boucle ="+i);
+			  }
+			  console.error("message d'erreur !");
+			  
+			  document.write("</tr>");
+			  document.write("</table>");
+		</script>
+	</body>
+</html>

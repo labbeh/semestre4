@@ -1,0 +1,28 @@
+div#contenu {
+  float: left;
+  width: 49%;
+  height: 90%;
+  overflow:scroll;
+}
+div#source {
+  float: right;
+  width: 49%;
+  border-left: solid 1px black;
+  background-color: #F0F0F0;
+  height:90%;
+  overflow:scroll;
+  color:black;
+}
+div#bottom {
+  clear: both;
+  height:10%;
+  background-color:yellow;
+}
+
+.cache {
+  display:none;
+}
+
+.invisible {
+  visibility: hidden;
+}

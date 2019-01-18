@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="affichageCode.css"/>
+<script type="text/javascript" src="affichageCode.js"></script>
+<title>Manipulation de chaines de caracteres</title>
+</head>
+<body>
+<h2>Comparaison de chaines de caract&egrave;res</h2>
+<script>
+	var ch1 = "bidule";
+	var ch2 = "bidule";
+	var ch3 = "autre";
+	var chobj1 = new String("bidule");
+	var chobj2 = new String("bidule");
+	var chobj3 = new String("autre");
+
+	document.write("typeof ch1 = "+typeof(ch1));
+	document.write("<br/>");
+	document.write("typeof chobj1 = "+typeof(chobj1));
+	document.write("<br/>");
+	document.write("ch1.length ="+ch1.length);
+	document.write("<br/>");
+
+	document.write("<hr/>");
+
+	if (ch1 == ch2) { document.write("ch1 == ch2"); }
+	else { document.write("not ch1==ch2"); }
+	document.write("<br/>");
+
+	if (ch1 == ch3) { document.write("ch1 == ch3"); }
+	else { document.write("not ch1==ch3"); }
+	document.write("<br/>");
+	
+	if (chobj1 == chobj2) { document.write("chobj1 == chobj2"); }
+	else { document.write("not chobj1==chobj2"); }
+	document.write("<br/>");
+	
+	if (chobj1 == chobj3) { document.write("chobj1 == chobj3"); }
+	else { document.write("not chobj1==chobj3"); }
+	document.write("<br/>");
+	
+	if (ch1 == chobj1) { document.write("ch1 == chobj1"); }
+	else { document.write("not ch1==chobj1"); }
+
+	document.write("<hr/>");
+
+	if (ch1 === ch2) { document.write("ch1 === ch2"); }
+	else { document.write("not ch1===ch2"); }
+	document.write("<br/>");
+	if (ch1 === ch3) { document.write("ch1 === ch3"); }
+	else { document.write("not ch1===ch3"); }
+	document.write("<br/>");
+	if (chobj1 === chobj2) { document.write("chobj1 === chobj2"); }
+	else { document.write("not chobj1===chobj2"); }
+	document.write("<br/>");
+	if (chobj1 === chobj3) { document.write("chobj1 === chobj3"); }
+	else { document.write("not chobj1===chobj3"); }
+	document.write("<br/>");
+	if (ch1 === chobj1) { document.write("ch1 === chobj1"); }
+	else { document.write("not ch1===chobj1"); }	
+	
+</script>
+</body>
+</html>

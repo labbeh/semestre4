@@ -1,0 +1,61 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="affichageCode.css"/>
+<script type="text/javascript" src="affichageCode.js"></script>
+<title>Propri&eacute;t&eacute;s d'un objet</title>
+</head>
+<body>
+<h2>Enum&eacute;rer les propri&eacute;t&eacute;s d'un objet</h2>
+<script>
+	function displayProp(obj) {
+		var props = "";
+		//boucle de parcours des propriétés d'un objet
+		for (var nomprop in obj) {
+			props = props + nomprop + "\n";
+		}
+		alert(props);
+	}
+	
+	//définir un objet à la volée sans passer par un constructeur
+	var obj1 = {x:3, y:2};
+	console.log(obj1);
+	displayProp(obj1);
+	
+	//définir un objet en utilisant un constructeur existant
+	var obj2 = new Object();
+	//on peut ajouter des propriétés à l'objet à la volée
+	obj2.titre = "Le parfum";
+	obj2.auteur = "Suskind";
+	obj2.editeur = "Interallie";
+
+	//comme en JAVA, une propriété peut elle-même être un objet (avec ses propres propriétés)
+	obj2.chapitre1 = new Object();
+	obj2.chapitre1.titre = "La naissance";
+	obj2.chapitre1.pages = 22;
+
+	console.log(obj2);
+	displayProp(obj2);
+
+	if (obj1.z == undefined) {
+		document.write("z n'est pas une propriete de obj1");
+	}
+	else{
+		document.write("z est une propriete de obj1");
+	}
+	document.write("<br/>");
+
+	var obj3 = new Date();
+	//fonction typeof permettant de connaitre le type d'une variable
+	if (typeof obj3 == "object") {
+		//fonction instanceof permettant de connaitre le type d'un objet (nom du constructeur qui l'a créé)
+		if (obj3 instanceof Date) {
+			document.write("obj3 est un objet qui a &eacute;t&eacute; cr&eacute;&eacute; avec le constructeur Date()");
+		}
+	}
+
+	document.write("<br/>");	
+	document.write(typeof displayProp);
+</script>
+</body>
+</html>

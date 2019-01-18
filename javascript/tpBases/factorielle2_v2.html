@@ -1,0 +1,50 @@
+<html>
+	<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Calcul de factorielles</title>
+	</head>
+
+	<body>
+		<h2>Table de factorielles</h2>
+		<script>
+			function affichage(tab){
+				var res = "";
+
+				res += "<table>";
+			  	res += "<tr>";
+
+				  /*for (var i=1; i<tab.length; i++){
+					res += "<td>" +i+ "! = " +tab[i]+ "</td>";
+				  }*/
+				  var i = 1;
+				  for(var valeur of tab){
+				  	res += "<td>" +i+ "! = " +valeur+ "</td>";
+				  	i++;
+				  }
+
+			  	res += "</tr>";
+			  	res += "</table>";
+
+			  	document.write(res);
+			}
+
+			function factorielles(n){
+				var retour = [1];
+				var fact = 1;
+
+				for (var i=1; i<n; i++) {
+			  		fact = fact*i;
+					retour.push(fact); // ajoute à la fin du tableau façon pile
+			  }
+
+			  return retour;
+			}
+
+			var tab = factorielles(12);
+
+			affichage(tab);
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="affichageCode.css"/>
+<script type="text/javascript" src="affichageCode.js"></script>
+<title>Objets et Prototypes</title>
+</head>
+<body>
+<h2>Objets et prototypes</h2>
+<script>
+  //définition d'un constructeur : c'est avant tout une fonction
+  function Rectangle(long,larg) {
+  //this designe ici l'objet qui sera créé avec le constructeur
+  //on définit ici deux propriétés pour le nouvel objet : largeur et longueur
+  this.largeur = larg;
+  this.longueur = long;
+  }
+
+  /*
+  Chaque fonction est un objet ayant une propriete "prototype" initialisé
+  automatiquement au moment de la création de la fonction.
+  Par exemple, la fonction Rectangle (qui se trouve être un constructeur)
+  a une prop. prototype dont la valeur est un objet ayant une seule prop.
+  appelée "constructor" dont la valeur est l'objet représentant la fonction Rectangle.
+  Le prototype d'un objet est la valeur de la propriete "prototype" 
+  de la fonction constructeur qui l'a créé.
+  NB : un objet hérite de toutes les propriétés (y compris de type fonction)
+  de son prototype.
+  Le plus souvent, on définit dans un prototype des fonctions (méthodes)
+  qui seront applicables à tous les objets ayant ce prototype ainsi que
+  des constantes.
+  */
+  /*
+  Ici on définit l'équivalent d'une méthode d'instance ie. qui sera applicable
+  à tout objet créé avec le constructeur Rectangle.
+  */
+  Rectangle.prototype.aire = function() { return this.largeur * this.longueur; }
+
+  var rect = new Rectangle(5,2);
+  document.write("aire du rectangle = "+rect.aire());
+  document.write("<br/>");
+  /*les deux lignes suivantes calculent la même chose (nom du constructeur de l'objet)
+    en effet, la propriete constructor du prototype est heritee par chaque
+    objet ayant ce prototype*/
+  document.write("nom constructeur = "+ Rectangle.prototype.constructor.name);
+  document.write("<br/>");
+  document.write("nom constructeur depuis l'objet = "+ rect.constructor.name);
+
+  /*
+  Definition de l'equivalent d'une methode de classe (ici methode getPi())
+  On definit une fonction stockée dans une propriete du constructeur (et 
+  non pas du prototype)
+  */
+  Rectangle.getPi = function() { return 3.14159; }
+  document.write("<br/>");
+  document.write("pi = "+Rectangle.getPi());
+
+</script>
+</body>
+</html>
