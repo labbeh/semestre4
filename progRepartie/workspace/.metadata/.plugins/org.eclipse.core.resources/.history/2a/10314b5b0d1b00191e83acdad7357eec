@@ -1,0 +1,21 @@
+package tp1;
+
+import java.util.Stack;
+
+public class PlusieursThreads {
+	
+	static Stack<Thread> threads;
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		threads = new Stack<>();
+
+	}
+	
+	public static void creerThread(){
+		
+	}
+
+}
