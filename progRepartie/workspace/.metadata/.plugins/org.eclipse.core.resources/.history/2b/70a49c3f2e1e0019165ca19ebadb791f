@@ -1,0 +1,30 @@
+package tp2;
+
+public class Enfant extends Thread {
+	private static int nbInstance = 0;
+	
+	private Bonbonniere b;
+	private int id;
+	
+	private int nbBonbonsAttrape;
+	
+	public Enfant(Bonbonniere b) {
+		this.b = b;
+		this.id = ++nbInstance;
+		
+		this.nbBonbonsAttrape = 0;
+	}
+	
+	@Override
+	public void run(){
+		int bonbon = b.attraperBonbon();
+		
+		while(bonbon != 0){
+			System.out.println("enfant " +id+ " bonbon: " +bonbon);
+			bonbon = b.attraperBonbon();
+		}
+		
+		System.out.println(id + ": plus de bonbon");
+	}
+
+}

@@ -4,4 +4,6 @@
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="tp1.PlusieursThreads"/>
 <fullyQualifiedTypeName name="tp1.CascadeThread"/>
+<fullyQualifiedTypeName name="tp2.Bonbonniere"/>
+<fullyQualifiedTypeName name="tp2.Enfant"/>
 </qualifiedTypeNameHistroy>

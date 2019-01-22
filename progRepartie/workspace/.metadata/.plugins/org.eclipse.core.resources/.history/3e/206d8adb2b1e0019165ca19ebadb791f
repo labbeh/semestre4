@@ -1,0 +1,9 @@
+package tp2;
+
+public class Enfant extends Thread {
+
+	public Enfant(Bonbonniere b) {
+		// TODO Auto-generated constructor stub
+	}
+
+}
