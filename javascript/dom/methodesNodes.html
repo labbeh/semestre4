@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p id="intro">Hello World!</p>
+		<p id="suite">Cet exemple montre l'utilisation de plusieurs m&eacute;thodes de la classe <b>Node</b> </p>
+
+		<script>
+			var x=document.getElementById("suite");
+			document.write("<p>Type du noeud: " + x.nodeType+ "</p>");
+			document.write("<p>Nom du noeud: " + x.nodeName+ "</p>");
+			var noeudFils = x.firstChild;
+			//noeudFils est un noeud de type Text avec une propriÃ©tÃ© data = texte associÃ©
+			document.write("<p>Texte contenu dans le premier noeud fils: " + noeudFils.data+ "</p>");
+			var listeEnfants = x.childNodes;
+			for (var i=0; i<listeEnfants.length; i++) {
+			    var noeud = listeEnfants[i];
+			    if (noeud.nodeType === Node.ELEMENT_NODE) {
+			      //document.write("<p>Enfant "+i+ " :--"+listeEnfants[i].innerHTML+"--</p>");
+			      document.write("<p>Enfant "+i+ " :--"+listeEnfants[i].tagName+"--</p>");
+			    }
+			    if (noeud.nodeType === Node.TEXT_NODE) {
+			      document.write("<p>Enfant "+i+ " :--"+listeEnfants[i].data+"--</p>");
+			    }
+			}
+			document.write("<p>Contenu HTML du noeud: "+x.innerHTML+"</p>");
+
+		</script>
+
+	</body>
+</html>

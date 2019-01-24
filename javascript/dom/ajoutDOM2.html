@@ -1,0 +1,31 @@
+<html>
+  <body>
+
+  <div id="para">
+    <p> sous-paragraphe 1</p>
+    <p> sous-paragraphe 2</p>
+    <p> sous-paragraphe 3</p>
+  </div>
+
+  <script>
+       var n = document.getElementById("para");
+       var f = n.childNodes;
+       var e,t,n,ch;
+       for (var i=0; i<f.length; i++) {
+         e = f[i];
+         if (e.nodeType == Node.ELEMENT_NODE) {
+
+          ch = e.firstChild.data;
+
+          n = document.createElement("b");
+
+          t = document.createTextNode(ch);
+          n.appendChild(t);
+
+          e.appendChild(n)
+        }
+       }
+  </script>
+
+  </body>
+</html>

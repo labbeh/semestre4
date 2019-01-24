@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Produits</title>
+	</head>
+
+	<body>
+		<h2>Table de factorielles</h2>
+		<table border="1">
+			<script>
+				function Produit(libelle, couleur, quantite){
+					this.lib = libelle;
+					this.coul = couleur;
+					this.qs = quantite;
+				}
+
+				Produit.prototype.genereLigne = function(numeroProduit){
+					var ligne = "<tr>";
+
+					for(var i=0; i<stock.length; i++){
+						ligne += "<th>produit " +numeroProduit +"</th>";
+						ligne += "<td>" +this.lib+ "</td>";
+						ligne += "<td>" +this.coul+ "</td>";
+						ligne += "<td>" +this.qs+ "</td>";
+
+						ligne += "</tr>";
+
+						return ligne;
+					}
+				}
+
+				var produit1 = new Produit("gomme", "blanc", 500);
+				var produit2 = new Produit("crayon", "bleu", 1000);
+				var produit3 = new Produit("cahier", "rouge", 500);
+
+				// sans définir la fonction Produit avant:
+				//var produit3 = {lib: "cahier", coul: "blanc", qs: 500};
+
+				var stock = [produit1, produit2, produit3];
+
+				// on peut rajouter des attributs à un objet:
+				produit1.fournisseur = "Amazon";
+				// on peut supprimer des propriétés:
+				delete produit1.qs;
+
+				console.log(stock); // pour du débug
+
+				for(var i=0; i<stock.length; i++){
+					document.write(stock[i].genereLigne(i+1));
+					//document.write("<tr>");
+					//document.write("<th>produit " +(i+1) +"</th>");
+
+					/*for(var attribut in stock[i]){
+						document.write("<td>" +stock[i][attribut]+ "</td>");
+					}*/
+
+					/*document.write("<td>" +stock[i].lib+ "</td>");
+					document.write("<td>" +stock[i].coul+ "</td>");
+					document.write("<td>" +stock[i].qs+ "</td>");*/
+
+					//document.write("</tr>");
+				}
+			</script>
+		</table>
+	</body>
+</html>

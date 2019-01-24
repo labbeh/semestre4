@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p>Hello World!</p>
+
+		<div id="main">
+			<p>Utilisation du DOM.</p>
+			<p>Cet exemple montre l'utilisation de la m&eacute;thode <b>getElementsByTagName</b> </p>
+		</div>
+
+		<script>
+			var x=document.getElementById("main");
+			var y=x.getElementsByTagName("p");
+			document.write('Premier paragraphe dans le div "main" = ' + y[0].innerHTML);
+			var i;
+			for (i=0;i<y.length;i++) {
+			  document.write('paragraphe '+i+' dans le div "main" = ' + y[i].innerHTML);
+			}
+		</script>
+	</body>
+</html>

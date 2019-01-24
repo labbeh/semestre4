@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Produits</title>
+	</head>
+
+	<body>
+		<h2>Table de factorielles</h2>
+		<table border="1">
+			<script>
+				function Produit(libelle, couleur, quantite){
+					this.lib = libelle;
+					this.coul = couleur;
+					this.qs = quantite;
+				}
+
+				function Magasin(stock){
+					this.stock = stock;
+				}
+
+				Produit.prototype.genereLigne = function(numeroProduit){
+					var ligne = "<tr>";
+
+					for(var i=0; i<stock.length; i++){
+						ligne += "<th>produit " +numeroProduit +"</th>";
+						ligne += "<td>" +this.lib+ "</td>";
+						ligne += "<td>" +this.coul+ "</td>";
+						ligne += "<td>" +this.qs+ "</td>";
+
+						ligne += "</tr>";
+
+						return ligne;
+					}
+				}
+
+				Magasin.prototype.addProduit = function(prod){
+					this.stock.push(prod);
+				}
+
+				Magasin.prototype.getNbProduits = function(){
+					return this.stock.length;
+				}
+
+				var produit1 = new Produit("gomme", "blanc", 500);
+				var produit2 = new Produit("crayon", "bleu", 1000);
+				var produit3 = new Produit("cahier", "rouge", 500);
+
+				var stock = [produit1, produit2, produit3];
+
+				var magasin = new Magasin(stock);
+
+				console.log(stock); // pour du débug
+				console.log(magasin);
+
+				//tests sur magasin
+				console.log(magasin.getNbProduits());
+
+				var produit4 = new Produit("pdt4", "vert", 120);
+				magasin.addProduit(produit4);
+
+				console.log(magasin.getNbProduits());
+
+				for(var i=0; i<stock.length; i++){
+					document.write(stock[i].genereLigne(i+1));
+				}
+			</script>
+		</table>
+	</body>
+</html>

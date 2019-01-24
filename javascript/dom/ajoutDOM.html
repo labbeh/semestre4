@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<div id="div1">
+		<p id="p1">Voici un paragrapahe.</p>
+		<p id="p2">Voici un autre paragraphe.</p>
+	</div>
+
+	<script>
+		var para=document.createElement("p");
+		/*
+		  //Approche à utiliser si la nouvelle balise (ici <p>)
+		  // contient des balises HTML et pas seulement du texte 
+		  var node=document.createTextNode("This is new.");
+		  para.appendChild(node);
+		*/
+
+		/* equivalent aux deux lignes qui precedent 
+		   dans le cas particulier où, comme ici, la 
+		   nouvelle balise ne contient que du texte
+		*/
+		para.innerHTML = "Un nouveau paragraphe";
+
+		var element=document.getElementById("div1");
+		element.appendChild(para);
+	</script>
+
+	</body>
+</html>
