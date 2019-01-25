@@ -1,0 +1,26 @@
+package tp2.jeuBalle;
+
+public class Joueur extends Thread {
+	/**
+	 * Numéro auto-incrémenté pour définir le numéro du joueur
+	 * */
+	private static int numInst = 0;
+	
+	/**
+	 * Numéro (unique) du joueur
+	 * */
+	private final int num;
+	
+	Joueur(){
+		num = ++ numInst;
+	}
+	
+
+	@Override
+	public void run() {
+		super.run();
+		
+		
+	}
+	
+}

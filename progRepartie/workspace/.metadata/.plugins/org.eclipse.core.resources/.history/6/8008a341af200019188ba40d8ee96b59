@@ -1,0 +1,37 @@
+package tp2.prodCons;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Buffer {
+	/**
+	 * Elements du Buffer
+	 * */
+	private List<String> items;
+	
+	/**
+	 * Nombre d'éléments max du buffer
+	 * */
+	private int capacite;
+	
+	public Buffer(int capacite){
+		this.items = new Vector<>();
+		this.capacite = capacite;
+	}
+	
+	/**
+	 * Retourne la capacité max du buffer
+	 * @return capacité max du buffer
+	 * */
+	int getCapacite(){
+		return capacite;
+	}
+	
+	/**
+	 * Permet d'insérer un élément dans le buffer
+	 * @param un String
+	 * */
+	synchronized void ajouter(String elt){
+		items.add(elt);
+	}
+}

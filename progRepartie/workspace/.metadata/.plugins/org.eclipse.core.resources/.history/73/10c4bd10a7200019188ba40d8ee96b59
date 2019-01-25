@@ -1,0 +1,8 @@
+package tp2.jeuBalle;
+
+public class Balle {
+	
+	void lancer(){
+		
+	}
+}

@@ -1,0 +1,11 @@
+package tp2.jeuBalle;
+
+public class Balle {
+	
+	/**
+	 * Pour lancer la baballe
+	 * */
+	void lancer(){
+		
+	}
+}

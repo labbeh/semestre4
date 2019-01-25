@@ -1,0 +1,19 @@
+package tp2.jeuBalle;
+
+public class Principale {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Balle balle = new Balle();
+		
+		Joueur j1 = new Joueur(balle);
+		Joueur j2 = new Joueur(balle);
+		
+		j1.start();
+		j2.start();
+
+	}
+
+}

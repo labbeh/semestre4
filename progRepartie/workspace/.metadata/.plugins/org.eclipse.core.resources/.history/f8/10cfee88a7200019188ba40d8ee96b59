@@ -1,0 +1,16 @@
+package tp2.jeuBalle;
+
+public class Balle {
+	
+	/**
+	 * Nombre de fois où la balle à été lancée
+	 * */
+	private int nbLance;
+	
+	/**
+	 * Pour lancer la baballe
+	 * */
+	void lancer(){
+		nbLance++;
+	}
+}

@@ -1,0 +1,15 @@
+package tp2.prodCons;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Buffer {
+	/**
+	 * Elements du Buffer
+	 * */
+	private List<String> items;
+	
+	public Buffer(){
+		this.items = new Vector<>();
+	}
+}
