@@ -8,10 +8,13 @@
 <fullyQualifiedTypeName name="tp2.Enfant"/>
 <fullyQualifiedTypeName name="tp2.tprint.Affichage"/>
 <fullyQualifiedTypeName name="tp2.tprint.TPrint"/>
-<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="tp2.prodCons.Producteur"/>
 <fullyQualifiedTypeName name="tp2.prodCons.Consommateur"/>
+<fullyQualifiedTypeName name="tp2.prodCons.Buffer"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="tp2.prodCons.ProdConso"/>
 </qualifiedTypeNameHistroy>

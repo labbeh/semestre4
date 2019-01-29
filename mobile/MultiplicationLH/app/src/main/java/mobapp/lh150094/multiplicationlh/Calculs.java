@@ -8,7 +8,7 @@ import java.util.Iterator;
  * Created by lh150094 on 22/01/19.
  */
 
-public class Calculs implements Iterable<String>, Iterator<String> {
+public class Calculs implements Iterable<String> {
     private String[] calculs;
     private int curs;
 
@@ -23,16 +23,24 @@ public class Calculs implements Iterable<String>, Iterator<String> {
     @NonNull
     @Override
     public Iterator<String> iterator() {
-        return this;
+        return new CalculIterator();
     }
 
-    @Override
-    public boolean hasNext() {
-        return curs < calculs.length;
-    }
 
-    @Override
-    public String next() {
-        return calculs[curs++];
+
+    private class CalculIterator implements Iterator<String>{
+
+        CalculIterator(){
+            curs = 0;
+        }
+        @Override
+        public boolean hasNext() {
+            return curs < calculs.length;
+        }
+
+        @Override
+        public String next() {
+            return calculs[curs++];
+        }
     }
 }

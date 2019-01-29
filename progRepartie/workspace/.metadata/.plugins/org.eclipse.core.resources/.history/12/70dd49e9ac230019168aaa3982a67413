@@ -1,0 +1,33 @@
+package tp2.prodCons;
+
+public class Buffer {
+	/**
+	 * Valeur
+	 * */
+	private String valeur ;
+	
+	/**
+	 * Disponibilité du buffer
+	 * */
+	private boolean available = false ;
+	
+	/**
+	 * Permet de retirer un élément du buffer
+	 * */
+	public void retirer() {
+		if(available) {
+			available = false ;
+			System.out.println("un Consommateur retire un item") ;
+		}
+	}
+	
+	/**
+	 * Permet d'ajouter un élément au buffer
+	 * */
+	public void ajouter() {
+		if(available == false) {
+			available = true ;
+			System.out.println("un Producteur ajoute un item") ;
+		}
+	}
+}

@@ -1,9 +1,0 @@
-package tp2;
-
-public class Enfant {
-
-	public Enfant() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

@@ -1,9 +1,0 @@
-package tp2;
-
-public class Bonbonniere {
-
-	public Bonbonniere() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

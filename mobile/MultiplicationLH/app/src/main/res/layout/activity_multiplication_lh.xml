@@ -1,26 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context="mobapp.lh150094.multiplicationlh.MultiplicationLH">
 
     <TextView
         android:id="@+id/operation"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/operation" />
+        android:layout_marginTop="15dp"
+        android:text="@string/operation"
+        app:layout_constraintEnd_toStartOf="@+id/rep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/rep"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/result" />
+        android:text="@string/result"
+        app:layout_constraintBaseline_toBaselineOf="@+id/operation"
+        app:layout_constraintEnd_toStartOf="@+id/btnValider"
+        app:layout_constraintStart_toEndOf="@+id/operation" />
 
     <Button
-        android:layout_width="276dp"
+        android:id="@+id/btnValider"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:onClick="verifOp"
         android:text="@string/submit"
-        android:onClick="verifOp"/>
+        app:layout_constraintBaseline_toBaselineOf="@+id/rep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rep" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/affichageReponses"
+        android:layout_width="252dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="96dp"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/rep"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

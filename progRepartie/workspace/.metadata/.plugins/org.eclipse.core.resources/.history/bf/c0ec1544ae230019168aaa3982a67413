@@ -1,0 +1,20 @@
+package tp2.prodCons;
+
+import java.util.Random;
+
+public class ProdConso extends Thread {
+	/**
+	 * Numéro séquentiel auto-incrémenté
+	 * */
+	private static int nbInst = 0;
+	
+	/**
+	 * Id
+	 * */
+	private int id;
+	
+	/**
+	 * Génère des choses aléatoirement pour simuler le comportement de producteurs/consommateurs
+	 * */
+	private Random alea;
+}

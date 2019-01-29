@@ -1,0 +1,39 @@
+package tp2.prodCons;
+
+import java.util.Random;
+
+public class ProdConso extends Thread {
+	/**
+	 * Numéro séquentiel auto-incrémenté
+	 * */
+	private static int nbInst = 0;
+	
+	/**
+	 * Id
+	 * */
+	private int id;
+	
+	/**
+	 * Nombre de producteur ET de consommateur
+	 * */
+	private int nbProdCons;
+	
+	/**
+	 * Génère des choses aléatoirement pour simuler le comportement de producteurs/consommateurs
+	 * */
+	private Random alea;
+	
+	/**
+	 * Référence au buffer
+	 * */
+	private Buffer buffer;
+	
+	/**
+	 * Construit un ProdCons à partir d'une référence au buffer et du nombre de producteur/consommateur voulut
+	 * @param buffer un Buffer
+	 * @param nbProdCons un int
+	 * */
+	public ProdConso(Buffer buffer, int nbProdCons){
+		
+	}
+}

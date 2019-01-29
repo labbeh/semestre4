@@ -1,53 +1,52 @@
 package tp2.prodCons;
 
-import java.util.List;
-import java.util.Vector;
-
 public class Buffer {
 	/**
-	 * Elements du Buffer
+	 * Nombre max possible d'elts dans le buffer
 	 * */
-	private List<String> items;
+	public static final int MAX = 300;
 	
 	/**
-	 * Nombre d'éléments max du buffer
+	 * Nombre d'éléments dans le buffer
 	 * */
-	private int capacite;
+	private int nbElts;
 	
-	public Buffer(int capacite){
-		this.items = new Vector<>(capacite);
-		this.capacite = capacite;
+	/**
+	 * Construit un Buffer à partir du nom d'éléments initialiement dedans
+	 * @param nbElt nombre d'éléments à mettre initialement dedans en int
+	 * */
+	public Buffer(int nbElt){
+		this.nbElts = nbElt;
 	}
 	
 	/**
-	 * Retourne la capacité max du buffer
-	 * @return capacité max du buffer
+	 * Permet de retirer un élément du buffer
 	 * */
-	int getCapacite(){
-		return capacite;
+	public synchronized void retirer() {
+		while(nbElts == 0){
+			try{
+				wait();
+			}
+			catch(InterruptedException evt){}
+		}
+		
+		nbElts--;
+		System.out.println("------ nbElts dans le buffer " +nbElts);
+		notify();
 	}
 	
 	/**
-	 * Retourne le nombre d'éléments qu'il y a dans le buffer
-	 * @return nombre d'éléments dans le buffer
+	 * Permet d'ajouter un élément au buffer
 	 * */
-	public int getNbElts(){
-		return items.size();
-	}
-	
-	/**
-	 * Permet d'insérer un élément dans le buffer
-	 * @param un String
-	 * */
-	synchronized void ajouter(String elt){
-		items.add(elt);
-	}
-	
-	/**
-	 * Permet de prendre un élément dans le buffer
-	 * @return un String
-	 * */
-	synchronized String prendre(){
-		return items.get(0);
+	public synchronized void ajouter() {
+		while(nbElts >= MAX){
+			try{
+				wait();
+			}
+			catch(InterruptedException evt){}
+		}
+		nbElts++;
+		System.out.println("------ nbElts dans le buffer " +nbElts);
+		notify();
 	}
 }
