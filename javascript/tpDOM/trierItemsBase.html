@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Trier les items d'une liste en modifiant le DOM </title>
+		<script>
+			//le paramètre de la fonction correspond à l'identifiant de la liste à trier
+			function trierItems(id) {
+			        var tenfants = new Array();
+				//A COMPLETER !
+				//recuperer dans le tableau tenfants les noeuds correspondant
+			        //aux items de la liste d'identifiant id
+				
+				//trier le tableau des items
+			        //la fonction anonyme, passée en paramètre à sort, sera appelée automatiquement par
+				//sort en lui passant en paramètres deux éléments quelconques n1 et n2 du 
+				//tableau tenfants.Cette fonction doit renvoyer 0 s'ils sont considérés comme égaux,
+				// 1 si le premier est considéré comme plus grand 
+			        //que le second et -1 sinon.
+			       tenfants.sort(function(n1,n2) {
+					   var s = A COMPLETER;
+					   var t = A COMPLETER;
+					   if 	   (s<t) {return -1;}
+					   else if (s>t) {return  1;}
+					   else 		 {return  0;}
+				});
+
+			        
+				//remplacer les items de la liste par les items dans l'ordre trie
+				//NB : Il n'est pas nécessaire de supprimer préalablement les noeuds fils de 
+				//la balise <ul>. Il suffit d'utiliser appendChild qui, lorsqu'elle doit ajouter
+				//un noeud fils dont la référence est identique à un noeud fils déjà existant du noeud
+				//courant, va supprimer l'ancien noeud fils.
+			}
+
+			/*
+			 * Cette partie de code ne doit pas être modifiée et sert à gérer le
+			   clic sur le bouton.
+			 */
+			function clicListe() {
+				trierItems('liste1');
+			}
+
+			function initEvents() {
+				var elembouton = document.getElementById("bouton");
+				elembouton.addEventListener("click",clicListe,false);
+			}
+
+			window.addEventListener("load",initEvents,false);
+		</script>
+	</head>
+
+	<body>
+		<h1> Trier les items d'une liste en utilisant le DOM </h1>
+
+		<h3> Liste non tri&eacute;e </h3>
+
+		<ul id="liste1">
+		<li> un </li>
+		<li> deux </li>
+		<li> trois </li>
+		<li> quatre </li>
+		</ul>
+
+		<button id="bouton"> Trier la liste </button>
+	</body>
+</html>

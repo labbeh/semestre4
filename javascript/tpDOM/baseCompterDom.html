@@ -3,28 +3,29 @@
 	<head>
 		<script>
 			function compterTags(n) {
-				return n.nodeType;
+				return n.length;
 			}
-
-		</script>
-
+		</script> 
 	</head>
-
-		<body>
+	
+	<body>
 
 		Voici un <em> document </em> tr&eacute;s simple.<br/>
 		<div>
 			<script>
+				/*var elt = document.getElementsByTagName("html");
+				var nbFils = compterTags(elt);*/
+
+				var afficherRes = document.createElement("p");
+
 				var elt = document.getElementsByTagName("html");
 				var nbFils = compterTags(elt);
 
-				var afficherRes = document.createElement("p");
 				afficherRes.innerHTML = "Nombre de noeud fils de html: " +nbFils;
 
 				var divs = document.getElementsByTagName("div");
 				divs[0].appendChild(afficherRes);
 			</script>
 		</div>
-
 	</body>
 </html>
