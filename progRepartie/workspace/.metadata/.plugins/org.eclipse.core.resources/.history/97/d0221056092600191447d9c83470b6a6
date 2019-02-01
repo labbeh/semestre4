@@ -1,0 +1,50 @@
+package tpSemaphore.parking;
+
+public class Vehicule extends Thread {
+	/**
+	 * Accès au parking
+	 * */
+	private Parking parking;
+	
+	public Vehicule(Parking parking) {
+		this.parking = parking;
+	}
+	
+	@Override
+	public void run() {
+		boolean enCours = true;
+		
+		while(enCours){
+			deplacer();
+			entrerParking();
+			stationner();
+			sortirParking();
+		}
+	}
+
+	private void sortirParking() {
+		
+	}
+
+	private void stationner() {
+		try{
+			Thread.sleep(2000);
+		}
+		catch(InterruptedException evt){
+			evt.printStackTrace();
+		}
+	}
+
+	private void entrerParking() {
+		// TODO Auto-generated method stub
+	}
+
+	private void deplacer() {
+		try{
+			Thread.sleep(2000);
+		}
+		catch(InterruptedException evt){
+			evt.printStackTrace();
+		}
+	}
+}

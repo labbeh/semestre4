@@ -1,0 +1,67 @@
+package tpSemaphore.parking;
+
+import java.util.concurrent.Semaphore;
+
+public class Vehicule extends Thread {
+	/**
+	 * Semaphore
+	 * */
+	private Semaphore semaphore;
+	
+	/**
+	 * Accès au parking
+	 * */
+	private Parking parking;
+	
+	public Vehicule(Parking parking) {
+		this.semaphore = parking.getSemaphore();
+		this.parking = parking;
+	}
+	
+	@Override
+	public void run() {
+		boolean enCours = true;
+		
+		while(enCours){
+			try {
+				semaphore.acquire();
+			
+				deplacer();
+				entrerParking();
+				stationner();
+				sortirParking();
+				
+				semaphore.release();
+			}
+			catch(InterruptedException evt){
+				evt.printStackTrace();
+			}
+		}
+	}
+
+	private void sortirParking() {
+		parking.sortir();
+	}
+
+	private void stationner() {
+		try{
+			Thread.sleep(2000);
+		}
+		catch(InterruptedException evt){
+			evt.printStackTrace();
+		}
+	}
+
+	private void entrerParking() {
+		parking.entrer();
+	}
+
+	private void deplacer() {
+		try{
+			Thread.sleep(2000);
+		}
+		catch(InterruptedException evt){
+			evt.printStackTrace();
+		}
+	}
+}

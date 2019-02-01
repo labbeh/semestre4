@@ -1,0 +1,14 @@
+
+package tpSemaphore.parking;
+
+public class Lanceur {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Parking p = new Parking(150, 0);
+		
+		Vehicule v1 = new Vehicule(p);
+	}
+}

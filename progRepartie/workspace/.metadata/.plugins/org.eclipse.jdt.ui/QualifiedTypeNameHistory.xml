@@ -14,7 +14,12 @@
 <fullyQualifiedTypeName name="tp2.prodCons.Producteur"/>
 <fullyQualifiedTypeName name="tp2.prodCons.Consommateur"/>
 <fullyQualifiedTypeName name="tp2.prodCons.Buffer"/>
-<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="tp2.prodCons.ProdConso"/>
+<fullyQualifiedTypeName name="tpSemaphore.parking.Parking"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="tpSemaphore.parking.Vehicule"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Semaphore"/>
+<fullyQualifiedTypeName name="tpSemaphore.equipes.Equipe"/>
+<fullyQualifiedTypeName name="tpSemaphore.equipes.Telephone"/>
 </qualifiedTypeNameHistroy>

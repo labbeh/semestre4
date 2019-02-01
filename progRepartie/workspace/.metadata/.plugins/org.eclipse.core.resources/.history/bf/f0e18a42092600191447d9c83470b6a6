@@ -1,0 +1,33 @@
+package tpSemaphore.parking;
+
+import java.util.concurrent.Semaphore;
+
+public class Parking {
+	/**
+	 * Semaphore pour gerer les accès multiples
+	 * */
+	private Semaphore semaphore;
+	
+	/**
+	 * Nombre de places dans le parking
+	 * */
+	private final int nbPlaces;
+
+	/**
+	 * Nombre de véhicule dans le parking
+	 * */
+	private int nbVh;
+
+	/**
+	 * Nombre de places restantes
+	 * */
+	private int restant;
+
+	public Parking(int nbPlaces, int nbVh) {
+		this.semaphore = new Semaphore(nbPlaces);
+		
+		this.nbVh 	  = nbVh;
+		this.nbPlaces = nbPlaces;
+		this.restant  = nbPlaces - nbVh;
+	}
+}
