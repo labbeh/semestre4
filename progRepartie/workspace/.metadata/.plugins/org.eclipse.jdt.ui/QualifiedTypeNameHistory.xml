@@ -20,6 +20,11 @@
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="tpSemaphore.parking.Vehicule"/>
 <fullyQualifiedTypeName name="java.util.concurrent.Semaphore"/>
-<fullyQualifiedTypeName name="tpSemaphore.equipes.Equipe"/>
 <fullyQualifiedTypeName name="tpSemaphore.equipes.Telephone"/>
+<fullyQualifiedTypeName name="tpSemaphore.equipes.Equipe"/>
+<fullyQualifiedTypeName name="java.lang.AssertionError"/>
+<fullyQualifiedTypeName name="philosophes.metier.ensembles.EnsemblePhilosophe"/>
+<fullyQualifiedTypeName name="philosophes.metier.ensembles.PileAssiette"/>
+<fullyQualifiedTypeName name="philosophes.metier.Philosophe"/>
+<fullyQualifiedTypeName name="philosophes.metier.Assiette"/>
 </qualifiedTypeNameHistroy>

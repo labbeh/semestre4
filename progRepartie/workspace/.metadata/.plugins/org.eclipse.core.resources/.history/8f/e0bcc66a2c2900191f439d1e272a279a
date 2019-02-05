@@ -1,0 +1,32 @@
+package philosophes.metier;
+
+import java.util.Stack;
+import java.util.stream.Stream;
+
+public class PileAssiette extends Stack<Assiette> {
+	/**
+	 * Nombre n maximum d'Assiette dans la pile
+	 * */
+	private int n;
+	
+	/**
+	 * Construit une pile de n Assiette
+	 * @param n un int, nombre d'assiettes
+	 * */
+	private PileAssiette( int n ) {
+		this.n = n;
+	}
+
+	/*@Override
+	public Stream<Assiette> parallelStream() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Stream<Assiette> stream() {
+		// TODO Auto-generated method stub
+		return null;
+	}*/
+
+}

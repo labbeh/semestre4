@@ -6,8 +6,10 @@ public class Lanceur {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		/*Telephone t1 = new Telephone();
+		Telephone t2 = new Telephone();*/
+		
+		Equipe e = new Equipe();
 	}
 
 }

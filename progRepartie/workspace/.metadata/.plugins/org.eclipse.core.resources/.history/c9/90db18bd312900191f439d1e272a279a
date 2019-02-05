@@ -1,0 +1,23 @@
+package philosophes.metier;
+
+public class Philosophe extends Thread {
+	/**
+	 * Nom du philosophe
+	 * */
+	private String nom;
+	
+	public Philosophe(String nom){
+		this.nom = nom;
+	}
+
+	@Override
+	public void run() {
+		super.run();
+	}
+	
+	@Override
+	public String toString(){
+		return this.nom;
+	}
+	
+}

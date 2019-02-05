@@ -1,5 +1,0 @@
-package tp2.jeuBalle;
-
-public class Joueur extends Thread {
-
-}

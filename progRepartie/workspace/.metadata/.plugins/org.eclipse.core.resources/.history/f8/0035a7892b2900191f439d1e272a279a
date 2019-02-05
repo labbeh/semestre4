@@ -1,0 +1,9 @@
+package philosophes.metier;
+
+public class Assiette {
+
+	public Assiette() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

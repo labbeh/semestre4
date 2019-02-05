@@ -1,0 +1,25 @@
+package philosophes;
+
+import philosophes.metier.ensembles.EnsemblePhilosophe;
+import philosophes.metier.ensembles.PileAssiette;
+
+public class Controleur {
+	/**
+	 * Ensemble de Philosophe
+	 * */
+	private EnsemblePhilosophe philosophes;
+	
+	/**
+	 * Pile d'Assiette
+	 * */
+	private PileAssiette assiettes;
+
+	public Controleur() {
+		
+	}
+	
+	public void lancer() {
+		
+	}
+
+}

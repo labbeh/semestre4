@@ -1,0 +1,9 @@
+package philosophes.metier;
+
+public class Fourchette {
+
+	public Fourchette() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

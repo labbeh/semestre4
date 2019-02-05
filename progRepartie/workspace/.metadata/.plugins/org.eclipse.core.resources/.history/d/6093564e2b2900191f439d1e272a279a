@@ -1,0 +1,7 @@
+package philosophes.metier;
+
+import java.util.Stack;
+
+public class PileAssiettes extends Stack<E> {
+
+}
