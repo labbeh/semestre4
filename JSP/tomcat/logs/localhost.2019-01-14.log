@@ -1,0 +1,502 @@
+janv. 14, 2019 1:50:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 1:50:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 1:50:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 1:50:30 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 1:50:30 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 1:50:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 1:50:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 1:50:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 2:03:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:03:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 2:10:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 2:10:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 2:10:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 2:17:15 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:17:15 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 2:17:19 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 2:17:19 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 2:17:19 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 2:21:14 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:21:14 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 2:21:16 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 2:21:16 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 2:21:16 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@16adbaed')
+janv. 14, 2019 2:21:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 2:21:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 2:21:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 2:21:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:21:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 2:22:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 2:22:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 2:22:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 2:22:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:22:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 2:22:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:22:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+janv. 14, 2019 2:22:13 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+janv. 14, 2019 2:22:13 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+janv. 14, 2019 2:22:13 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1686555')
+janv. 14, 2019 2:23:13 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet [jsp] in context with path [/Appli1] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert ";" to complete Statement
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+The left-hand side of an assignment must be a variable
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert ";" to complete Statement
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+The left-hand side of an assignment must be a variable
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+janv. 14, 2019 2:23:16 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet [jsp] in context with path [/Appli1] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert ";" to complete Statement
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+The left-hand side of an assignment must be a variable
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error, insert ";" to complete Statement
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+The left-hand side of an assignment must be a variable
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%"variable x: "
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+janv. 14, 2019 2:23:28 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet [jsp] in context with path [/Appli1] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+variable cannot be resolved to a type
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%variable x: 
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error on token ":", ; expected
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%variable x: 
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+variable cannot be resolved to a type
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%variable x: 
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /index.jsp
+Syntax error on token ":", ; expected
+17: 		out.println(" Nous sommes le "+ d);
+18: 		%>
+19: 
+20: 		<%variable x: 
+21: 		%>
+22: 	</body>
+23: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+janv. 14, 2019 2:44:35 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet [jsp] in context with path [/Appli1] threw exception [Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [15] in the generated java file: [/home/etudiant/lh150094/tomcat/work/Catalina/localhost/Appli1/org/apache/jsp/index_jsp.java]
+Only a type can be imported. annexe.Personne resolves to a package
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [15] in the generated java file: [/home/etudiant/lh150094/tomcat/work/Catalina/localhost/Appli1/org/apache/jsp/index_jsp.java]
+Only a type can be imported. annexe.Personne resolves to a package
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+janv. 14, 2019 2:45:07 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet [jsp] in context with path [/Appli1] threw exception [Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [15] in the generated java file: [/home/etudiant/lh150094/tomcat/work/Catalina/localhost/Appli1/org/apache/jsp/index_jsp.java]
+Only a type can be imported. annexe.Personne resolves to a package
+
+Une erreur s'est produite à la ligne: 32 dans le fichier jsp: /index.jsp
+Personne cannot be resolved to a type
+29: 
+30: 		out.println("<br />");
+31: 
+32: 		Personne p = new Personne("bs", "sb", 45);
+33: 
+34: 		%>
+35: 	</body>
+
+
+Une erreur s'est produite à la ligne: 32 dans le fichier jsp: /index.jsp
+Personne cannot be resolved to a type
+29: 
+30: 		out.println("<br />");
+31: 
+32: 		Personne p = new Personne("bs", "sb", 45);
+33: 
+34: 		%>
+35: 	</body>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [15] in the generated java file: [/home/etudiant/lh150094/tomcat/work/Catalina/localhost/Appli1/org/apache/jsp/index_jsp.java]
+Only a type can be imported. annexe.Personne resolves to a package
+
+Une erreur s'est produite à la ligne: 32 dans le fichier jsp: /index.jsp
+Personne cannot be resolved to a type
+29: 
+30: 		out.println("<br />");
+31: 
+32: 		Personne p = new Personne("bs", "sb", 45);
+33: 
+34: 		%>
+35: 	</body>
+
+
+Une erreur s'est produite à la ligne: 32 dans le fichier jsp: /index.jsp
+Personne cannot be resolved to a type
+29: 
+30: 		out.println("<br />");
+31: 
+32: 		Personne p = new Personne("bs", "sb", 45);
+33: 
+34: 		%>
+35: 	</body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+janv. 14, 2019 2:45:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+janv. 14, 2019 2:45:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()

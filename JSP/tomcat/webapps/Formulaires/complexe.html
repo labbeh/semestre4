@@ -1,0 +1,84 @@
+<table bgcolor="white"><tr><td>
+	<form action='traitementFormulaire.jsp' method='post'>
+	<table border='1'>
+	<tr><td colspan='2' bgcolor='#BBBBBB'><b>Identité</b></td></tr>
+
+	<tr>
+	<td bgcolor='#DDDDDD'>Nom et prénom</td>
+	<td><input type='text' name='txtnom'></td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#DDDDDD'>Mot de passe</td>
+	<td><input type='password' name='txtpassword'></td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#DDDDDD'>Région de résidence</td>
+	<td>
+	<select name='listeRegions' size='5'>
+	<option value='Aquitaine'>Aquitaine</option>
+	<option value='Bretagne'>Bretagne</option>
+	<option value='Corse'>Corse</option>
+	<option value='Ile de France'>Ile de France</option>
+	<option value='Nord - Pas de Calais'>Nord - Pas de Calais</option>
+	<option value='Pays de la Loire'>Pays de la Loire</option>
+	<option value='Poitou Charentes'>Poitou Charentes</option>
+	</select>
+	</td>
+	</tr>
+	</table>
+	<p>
+	<table border='1'>
+	<tr><td colspan='2' bgcolor='#BBBBBB'><b>Préférences musicales</b></td></tr>
+	<tr>
+	<td  bgcolor='#DDDDDD'>Vos instruments préférés</td>
+	<td>
+	<select name='listeInstruments' size='5' multiple>
+	<option value='flute traversiere'>Flute traversière</option>
+	<option value='guitare'>Guitare</option>
+	<option value='piano'>Piano</option>
+	<option value='saxophone'>Saxophone</option>
+	<option value='trombone'>Trombone</option>
+	<option value='violon'>Violon</option>
+	</select>
+	</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#DDDDDD'>Vos compositeurs favoris</td>
+	<td>
+	<input type='checkbox' name='compositeurs' value='Chopin'>Chopin<br>
+	<input type='checkbox' name='compositeurs' value='Lully'>Lully<br>
+	<input type='checkbox' name='compositeurs' value='Mozart'>Mozart<br>
+	<input type='checkbox' name='compositeurs' value='Schubert'>Schubert<br>
+	</td>
+	</tr>
+
+
+	<tr>
+	<td bgcolor='#DDDDDD'>Nombre d'instruments pratiqués</td>
+	<td>
+	<input type='radio' name='nombre_instruments_pratiques' value='Aucun'>Aucun
+	<input type='radio' name='nombre_instruments_pratiques' value='Un seul'>Un seul
+	<input type='radio' name='nombre_instruments_pratiques' value='Au moins 2'>Au moins deux
+	</td>
+	</tr>
+	</table>
+	<p>
+
+	<table border='1'>
+	<tr><td colspan='2' bgcolor='#BBBBBB'><b>Votre avis</b></td></tr>
+	<tr>
+
+	<td bgcolor='#DDDDDD'>Pour quelles raisons êtes-vous intéressé par ce site?</td>
+	<td><textarea name='avis' rows='5' cols='40'></textarea></td>
+	</tr>
+
+	</table>
+	<p>
+	<p>
+	<input type='submit' value='Validez'>
+	</form>
+</td></tr></table>
+<p>

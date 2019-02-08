@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ 
+<web-app version="3.0">
+  <display-name>websc</display-name>
+
+	<servlet>
+		<servlet-name>controle</servlet-name>
+		<servlet-class>Controle</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<url-pattern>/controle</url-pattern>
+		<servlet-name>controle</servlet-name>
+	</servlet-mapping>
+
+</web-app>

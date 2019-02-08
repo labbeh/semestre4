@@ -1,0 +1,142 @@
+févr. 04, 2019 10:20:53 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+févr. 04, 2019 10:20:53 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+févr. 04, 2019 10:20:53 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 10:58:31 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 10:58:33 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 10:58:33 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 10:59:45 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 10:59:46 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:00:58 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:00:58 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:03:31 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:03:32 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:04:20 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:04:20 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:07:20 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: stop: Stopping web application '/Appli1'
+févr. 04, 2019 11:07:20 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:07:22 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: stop: Stopping web application '/Appli2'
+févr. 04, 2019 11:07:22 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:07:24 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:07:24 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:07:47 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:07:48 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:13:44 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:13:45 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:15:09 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:15:09 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:15:18 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:15:18 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:17:43 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:17:44 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:25:07 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:25:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:30:23 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:30:25 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:35:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:35:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:38:49 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:38:49 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 11:39:43 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Formulaires'
+févr. 04, 2019 11:39:44 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:12:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+févr. 04, 2019 2:12:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+févr. 04, 2019 2:12:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:12:58 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: stop: Stopping web application '/Appli1'
+févr. 04, 2019 2:12:59 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:13:00 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: stop: Stopping web application '/Appli2'
+févr. 04, 2019 2:13:00 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:13:02 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: stop: Stopping web application '/Formulaires'
+févr. 04, 2019 2:13:02 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:13:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:13:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:15:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:15:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:18:03 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:18:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:19:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:19:24 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:25:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:25:24 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:37:07 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:37:08 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:39:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:39:34 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:40:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:40:02 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:40:42 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:40:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:42:51 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:42:52 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 04, 2019 2:43:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Collab'
+févr. 04, 2019 2:43:24 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'

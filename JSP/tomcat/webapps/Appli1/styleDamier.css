@@ -1,0 +1,17 @@
+table { 
+	border : 1px solid black ;
+	border-collapse : collapse;
+}
+
+.noir {
+	background-color : black;
+	width : 30px;
+	height : 30px;
+}
+
+.blanc {
+	background-color : white;
+	width : 30px;
+	height : 30px;
+}
+
