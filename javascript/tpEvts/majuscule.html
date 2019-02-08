@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script>
+			window.addEventListener("load", init);
+
+			function init(event){
+				let zoneSasie = document.getElementById("inputSaisie");
+				zoneSasie.addEventListener("input", convertirMaj);
+			}
+
+			function convertirMaj(event){
+				// version longue
+				/*let zoneSasie = document.getElementById("inputSaisie");
+				console.log(zoneSasie.value);*/
+
+				// version avec this
+				let textSaisi = this.value;
+				this.value = textSaisi.toUpperCase();
+				console.log(textSaisi);
+
+				// avec currentTarget
+				/*let textSaisi = event.currentTarget.value;
+				console.log(textSaisi);*/
+
+				// avec target
+				/*let textSaisi = event.target.value
+				console.log(textSaisi);*/
+			}
+
+		</script>
+	</head>
+
+	<body>
+		saisir un texte <input type="text" id="inputSaisie" />
+	</body>
+</html>

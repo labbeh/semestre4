@@ -1,0 +1,48 @@
+package philosophes.metier;
+
+import philosophes.Controleur;
+
+public class Philosophe extends Thread {
+	/**
+	 * Instance du controleur
+	 * */
+	private Controleur ctrl;
+	
+	/**
+	 * Nom du philosophe
+	 * */
+	private String nom;
+	
+	/**
+	 * Construit un philosophe à partir de son nom
+	 * @param nom nom du philosophe en String doit être unique
+	 * */
+	public Philosophe(String nom, Controleur ctrl){
+		this.nom = nom;
+		this.ctrl = ctrl;
+	}
+
+	@Override
+	public void run() {
+		super.run();
+		while(ctrl.resteAssiette()){
+			reflechir();
+			manger();
+			dormir();
+		}
+	}
+	
+	/**
+	 * Retourne le nom du philosophe
+	 * @return nom du philosophe
+	 * */
+	public String getNom() {
+		return nom;
+	}
+
+	@Override
+	public String toString(){
+		return this.nom;
+	}
+	
+}

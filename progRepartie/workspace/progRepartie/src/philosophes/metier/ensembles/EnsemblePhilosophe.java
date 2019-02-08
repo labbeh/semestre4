@@ -117,9 +117,8 @@ public class EnsemblePhilosophe  implements List<Philosophe> {
 	}
 
 	@Override
-	public Philosophe get(int arg0) {
-		// TODO Auto-generated method stub
-		return null;
+	public Philosophe get(int i) {
+		return philosophes[i];
 	}
 
 	@Override
@@ -196,7 +195,7 @@ public class EnsemblePhilosophe  implements List<Philosophe> {
 	@Override
 	public int size() {
 		if(isEmpty()) return 0;
-		return i+1;
+		return i;
 	}
 
 	@Override

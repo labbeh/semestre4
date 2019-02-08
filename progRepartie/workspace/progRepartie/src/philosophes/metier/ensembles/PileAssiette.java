@@ -1,6 +1,7 @@
 package philosophes.metier.ensembles;
 
 import java.util.Stack;
+import java.util.concurrent.Semaphore;
 import java.util.stream.Stream;
 
 import philosophes.metier.Assiette;
@@ -10,6 +11,11 @@ public class PileAssiette extends Stack<Assiette> {
 	 * Nombre n initial d'Assiette dans la pile
 	 * */
 	private int n;
+	
+	/**
+	 * Semaphore pour gérer les accès aux assiettes
+	 * */
+	private Semaphore semaphore;
 	
 	/**
 	 * Factory pour vérifier que le nombre d'assiete est bien supérieur au nombre
@@ -29,7 +35,9 @@ public class PileAssiette extends Stack<Assiette> {
 	 * @param n un int, nombre d'assiettes
 	 * */
 	private PileAssiette( int n ) {
+		super();
 		this.n = n;
+		new Semaphore(n, true);
 	}
 	
 	@Override
@@ -37,17 +45,23 @@ public class PileAssiette extends Stack<Assiette> {
 		if(size() < n) return super.push(a);
 		return null;
 	}
-
-	/*@Override
-	public Stream<Assiette> parallelStream() {
-		// TODO Auto-generated method stub
+	
+	/**
+	 * Permet de prendre une assiette
+	 * */
+	public synchronized Assiette prendre(){
+		/*try{
+			semaphore.acquire();
+			if(!empty()) return pop();
+		}
+		catch(InterruptedException evt){
+			evt.printStackTrace();
+		}
+		
+		return null;*/
+		if(!empty()) return pop();
+		
 		return null;
 	}
-
-	@Override
-	public Stream<Assiette> stream() {
-		// TODO Auto-generated method stub
-		return null;
-	}*/
 
 }

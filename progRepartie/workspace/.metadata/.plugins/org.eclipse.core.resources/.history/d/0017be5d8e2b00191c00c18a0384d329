@@ -1,0 +1,36 @@
+package philosophes.metier;
+
+public class Fourchette {
+	/**
+	 * Référence vers un des deux philosophes ayant accès à la fourchette
+	 * */
+	private Philosophe ph1;
+	
+	/**
+	 * Référence vers un des deux philosophes ayant accès à la fourchette
+	 * */
+	private Philosophe ph2;
+	
+	/**
+	 * Compteur du nombre d'instance de Fourchette pour numéro unique
+	 * */
+	private static int nbInst = 0;
+	
+	/**
+	 * Identifiant unique d'une instance
+	 * */
+	private int num;
+	
+	/**
+	 * Construit une Fourchette qui sera partagée entre les philosophes
+	 * */
+	public Fourchette() {
+		this.num = ++nbInst;
+	}
+	
+	@Override
+	public String toString(){
+		return "f" +num;
+	}
+
+}

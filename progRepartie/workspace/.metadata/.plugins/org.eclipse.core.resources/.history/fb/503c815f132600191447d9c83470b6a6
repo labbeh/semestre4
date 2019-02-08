@@ -1,5 +1,0 @@
-package tpSemaphore.equipes;
-
-public class Equipe extends Thread {
-
-}

@@ -38,9 +38,6 @@ public class Parking {
 			nbVh--;
 			restant++;
 		}
-
-
-		
 	}
 	
 	public void entrer() {
