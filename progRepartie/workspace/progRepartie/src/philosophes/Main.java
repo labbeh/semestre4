@@ -14,7 +14,7 @@ public class Main {
 		Controleur ctrl = new Controleur();
 		ctrl.lancer(5, 10, noms);
 		
-		System.out.println(ctrl);
+		//System.out.println(ctrl);
 	}
 
 }

@@ -43,8 +43,7 @@ public class EnsemblePhilosophe extends Vector<Philosophe>  /*implements List<Ph
 	 * @param n nombre de philosophe
 	 * */
 	private EnsemblePhilosophe( int n ) {
-		super(n);
-		//this.philosophes = new Philosophe[n];
+		this.philosophes = new Philosophe[n];
 		this.n = n;
 		this.i = 0;
 	}

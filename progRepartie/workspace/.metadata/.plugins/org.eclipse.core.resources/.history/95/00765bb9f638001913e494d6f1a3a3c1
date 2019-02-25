@@ -53,12 +53,12 @@ public class Philosophe extends Thread {
 	 * Permet au philosophe de manger, aura pour effet d'enelver une assiette de la pile
 	 * */
 	private void manger() {
-		Assiette a = ctrl.prendreAssiete();
-		System.out.println(nom +" a pris l'assiete " +a.getNum());
+		ctrl.prendreAssiete();
+		System.out.println(nom +" a pris une assiette");
 		
 		sleep(); // le temps de manger ...
 		
-		System.out.println(nom +" a fini de manger dans l'assiette " +a.getNum());
+		System.out.println(nom +" a fini de manger");
 	}
 
 	/**

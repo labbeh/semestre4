@@ -64,8 +64,8 @@ public class Controleur {
 		}
 		
 		// lancement des thread philosophes
-		for(Philosophe p: philosophes)
-			p.start();
+		/*for(Philosophe p: philosophes)
+			p.start();*/
 	}
 	
 	/**

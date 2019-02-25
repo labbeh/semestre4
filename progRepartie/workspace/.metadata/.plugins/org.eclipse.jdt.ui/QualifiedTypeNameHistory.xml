@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="tp2.Enfant"/>
 <fullyQualifiedTypeName name="tp2.tprint.Affichage"/>
 <fullyQualifiedTypeName name="tp2.tprint.TPrint"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="tp2.prodCons.Producteur"/>
@@ -28,6 +27,7 @@
 <fullyQualifiedTypeName name="philosophes.Controleur"/>
 <fullyQualifiedTypeName name="java.util.concurrent.Semaphore"/>
 <fullyQualifiedTypeName name="philosophes.exceptions.NombreIncorrectExcpetion"/>
-<fullyQualifiedTypeName name="philosophes.metier.Philosophe"/>
 <fullyQualifiedTypeName name="philosophes.metier.Fourchette"/>
+<fullyQualifiedTypeName name="philosophes.metier.Philosophe"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
 </qualifiedTypeNameHistroy>

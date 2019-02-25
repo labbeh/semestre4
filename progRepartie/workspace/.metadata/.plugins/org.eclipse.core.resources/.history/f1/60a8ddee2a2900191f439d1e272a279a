@@ -1,5 +1,0 @@
-package philosophes.metier;
-
-public class Philosophe extends Thread {
-
-}
