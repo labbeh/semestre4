@@ -46,9 +46,10 @@ public class Fourchette {
 	/**
 	 * Permet à un philosphe de prendre la fourchette
 	 * */
-	public void prendre() {
+	public void prendre(Philosophe p) {
 		try{
 			semaphore.acquire();
+            System.out.println(p +" a pris la fouchette " +num);
 		}
 		catch(InterruptedException evt){
 			evt.printStackTrace();
@@ -58,9 +59,14 @@ public class Fourchette {
 	/**
 	 * Libère la fourchette après utilisation
 	 * */
-	public void poser() {
+	public void poser(Philosophe p) {
 		semaphore.release();
+        System.out.println(p +" a reposer la fourchette " +num);
 	}
+    
+    public int getNum(){
+        return num;
+    }
 	
 	@Override
 	public String toString(){

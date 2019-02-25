@@ -1,6 +1,7 @@
 package philosophes;
 
 import philosophes.exceptions.NombreIncorrectExcpetion;
+import philosophes.ihm.IHMGui;
 import philosophes.metier.Assiette;
 import philosophes.metier.Fourchette;
 import philosophes.metier.Philosophe;
@@ -22,12 +23,17 @@ public class Controleur {
 	 * Ensemble de fourchettes
 	 * */
 	private Fourchette[] fourchettes;
+    
+    /**
+     * Ihm gaphique
+     */
+    private IHMGui ihm;
 	
 	/**
 	 * Constructeur du controleur MVC
 	 * */
 	public Controleur(){
-		
+		//this.ihm = new IHMGui(this);
 	}
 	
 	/**
@@ -57,16 +63,63 @@ public class Controleur {
 		for(int i=0; i<fourchettes.length; i++) {
 			fourchettes[i] = new Fourchette();
 			
-			philosophes.get(i).setFourchette(fourchettes[i]);
-			
+			//philosophes.get(i).setFourchette(fourchettes[i]);
+            
+			/*if(i-1 < 0) philosophes.get(0).setFourchette2(fourchettes[i]);
 			if(i+1 < philosophes.size()) philosophes.get(i+1).setFourchette(fourchettes[i]);
-			else 						 philosophes.get(0  ).setFourchette(fourchettes[i]);
+			else 						 philosophes.get(0  ).setFourchette(fourchettes[i]);*/
 		}
+        
+        for(int i=0; i<philosophes.size(); i++){
+            Philosophe temp = philosophes.get(i);
+            
+            temp.setFourchette1(fourchettes[i]);
+            if(i+1 < fourchettes.length) temp.setFourchette2(fourchettes[i+1]);
+            else                         temp.setFourchette2(fourchettes[0]);
+        }
 		
 		// lancement des thread philosophes
-		for(Philosophe p: philosophes)
-			p.start();
+		//animerPhilosophes();
+        
+        // création de la fenetre graphique
+        lancerIhm();
 	}
+    
+    /**
+     * Permet de lancer les threads philosophes
+     */
+    public void animerPhilosophes(){
+        for(Philosophe p: philosophes)
+			p.start();
+    }
+    
+    /**
+     * Lance l'ihm graphique
+     */
+    public void lancerIhm(){
+        java.awt.EventQueue.invokeLater(new ThreadIhm(this));
+        
+    }
+
+    public void setEtat(String nom, String etat) {
+        ihm.setEtat(nom, etat);
+    }
+    
+    private class ThreadIhm implements Runnable{
+        private Controleur ctrl;
+        
+        public ThreadIhm(Controleur ctrl){
+            this.ctrl = ctrl;
+        }
+
+        @Override
+        public void run() {
+            ihm = new IHMGui(ctrl);
+            ihm.setNbAssiettes(assiettes.size());
+            ihm.setVisible(true);
+        }
+        
+    }
 	
 	/**
 	 * Permet de savoir si il reste des assiettes ou non dans la pile
@@ -81,8 +134,26 @@ public class Controleur {
 	 * @return la référence à l'Assiette qu'il a pris
 	 * */
 	public Assiette prendreAssiete() {
-		return assiettes.prendre();
+		Assiette a = assiettes.prendre();
+        ihm.setNbAssiettes(assiettes.size());
+        return a;
 	}
+    
+    public int getNbPhilosophes(){
+        return philosophes.size();
+    }
+    
+    public int getNbAssiettes(){
+        return assiettes.size();
+    }
+    
+    public int getNbFourchettes(){
+        return 0;
+    }
+    
+    public Philosophe getPhilosophe(int index){
+        return philosophes.get(index);
+    }
 	
 	@Override
 	public String toString(){
