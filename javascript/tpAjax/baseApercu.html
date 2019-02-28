@@ -1,0 +1,125 @@
+<!DOCTYPE htm>
+<html>
+  <head>
+    <title>Gestion d'aper&ccedil;us</title>
+  <style type="text/css">
+  #sommaire
+  {
+  position:absolute;
+  background-color:red;
+  left:10px;
+  width:150px;
+  padding : 5px;
+  display:table-cell;
+  border-right : 2px solid silver;
+  }
+ 
+  #page
+  {
+  position:absolute;
+  background-color:#AAAAAA;
+  left : 200px;
+  width:500px;
+  height:500px;
+  padding : 10px;
+  //visibility : hidden;
+  }
+
+  #sommaire ul {
+   margin :  5px;
+  }
+
+  #sommaire li {
+   list-style-type : none;
+   background-color : #DDD;
+   margin-bottom : 1px;
+   padding : 4px;
+  }
+
+  #sommaire a {
+   text-decoration : none;
+   color : black;
+  }
+
+  #sommaire a:hover {
+   color : red;
+   font-weight : bold;
+  }
+  </style>
+ 
+</head>
+ 
+<body>
+<script>
+    window.addEventListener("load", init);
+
+    function init(event){
+      var lien = document.getElementById("sommaire");
+      lien.addEventListener("mouseover", sourisOn);
+      lien.addEventListener("mouseout", sourisOut);
+    }
+
+    function sourisOn(event){
+      var lien = this.getElementsByTagName("a")[0];
+      //lien.addEventListener("click", function(e) {requeteAJAX();}, false);
+      //console.log("souris on" +lien);
+      afficherApercu();
+      requeteAJAX();
+    }
+
+    function sourisOut(event){
+      console.log("souris out");
+    }
+
+    function requeteAJAX()
+    {
+    var xmlhttp;
+    if (window.XMLHttpRequest)
+      {// code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp=new XMLHttpRequest();
+      }
+    else
+      {// code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+    xmlhttp.open("GET","http://localhost/page1.html",true);
+    
+    
+
+    //var contenu = xmlhttp.
+    
+    xmlhttp.send();
+    console.log(xmlhttp.status);
+    }
+
+    function afficherApercu(){
+      var page = document.getElementById("page");
+      t = document.createTextNode("rereere");
+      page.appendChild(t);
+    }
+</script>
+
+   <div id="sommaire">
+        <h3>Sommaire</h3>
+        <ul>
+	<li>
+        <a href="page1.html">Page 1</a><br/>
+	</li>
+	<li>
+        <a href="page2.html">Page 2</a><br/>
+	</li>
+	<li>
+        <a href="page3.html">Page 3</a><br/>
+	</li>
+	<li>
+        <a href="page4.html">Page 4</a><br/>
+	</li>
+	  </ul>
+    </div>
+ 
+    <div id="page">
+    </div>
+ 
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<title>Exemple de requ&ecirc;te AJAX simple avec GET</title>
+<script>
+function traiterResultat(xmlhttp) {
+  var texte = document.getElementById("myDiv").innerHTML;
+
+  /*
+  On ne peut pas tester cet etat dans la fonction associee a "onreadystatechange" car elle
+  n'est activee que lors d'un changement d'etat. Or par defaut l'etat initial est 0.
+  if (xmlhttp.readyState==0) {
+    document.getElementById("myDiv").innerHTML="<br/>Requ&ecirc;te non initialis&eacutea !;";
+  }
+  */
+
+  if (xmlhttp.readyState==1) {
+     document.getElementById("myDiv").innerHTML="Connexion avec le serveur &eacute;tablie!";
+  }
+
+  if (xmlhttp.readyState==2) {
+      document.getElementById("myDiv").innerHTML=texte + "<br/>Requ&ecirc;te re&ccedil;ue par le serveur !";
+  }
+
+  if (xmlhttp.readyState==3) {
+       document.getElementById("myDiv").innerHTML=texte + "<br/>Traitement de la requ&ecirc;te par la serveur!";
+  }
+
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  {
+   document.getElementById("myDiv").innerHTML=texte + "<br/>" + xmlhttp.responseText;
+  }
+
+  if (xmlhttp.readyState==4 && xmlhttp.status==404)
+  {
+   document.getElementById("myDiv").innerHTML= texte + "<br/><br/> ---- Fichier inexistant ! ---- ";
+  } 
+}
+
+function preparerXHR()
+{
+ var xmlhttp;
+ if (window.XMLHttpRequest)
+   { // code for IE7+, Firefox, Chrome, Opera, Safari
+     xmlhttp=new XMLHttpRequest();
+   }
+ else
+  { // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.addEventListener("readystatechange",function(e) { traiterResultat(xmlhttp); });
+  return xmlhttp; 
+}
+
+function envoyerRequete(xmlhttp,nomFichier) {
+	xmlhttp.open("GET",nomFichier,true);
+	xmlhttp.send();
+}
+
+function initEvents(event) {
+		 var xhr = preparerXHR();
+                 var elem1 = document.getElementById("bouton1");
+                 elem1.addEventListener("click", function(e) {envoyerRequete(xhr,"ajax_info.txt");}, false);
+                 var elem2 = document.getElementById("bouton2");
+                 elem2.addEventListener("click", function(e) {envoyerRequete(xhr,"ajaxinfo.txt");}, false);
+                };
+
+window.addEventListener("load", initEvents, false);
+</script>
+
+<style>
+#myDiv {
+    position:absolute;
+    background-color:#AAAAAA;
+    left : 10px;
+    width:1000px;
+    top:100px;
+    height:150px;
+    padding : 5px;
+}
+
+#bouton1 {
+    position:absolute;
+    left : 10px;
+    top : 280px;
+}
+
+#bouton2 {
+    position:absolute;
+    left : 250px;
+    top : 280px;
+
+}
+</style>
+</head>
+
+<body>
+<h1>Un exemple de requ&ecirc;te AJAX simple sans envoi de donn&eacute;es au serveur</h1>
+
+<div id="myDiv"><h2>Ce texte va &ecirc;tre modifi&eacute; par un texte r&eacute;cup&eacute;r&eacute; via une requ&ecirc;te AJAX </h2></div>
+<button id="bouton1" type="button">requ&ecirc;te AJAX sur fichier correct</button>
+<button id="bouton2" type="button">requ&ecirc;te AJAX sur fichier erron&eacute;</button>
+</body>
+</html>

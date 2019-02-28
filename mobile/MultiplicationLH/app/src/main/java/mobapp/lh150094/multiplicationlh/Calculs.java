@@ -2,13 +2,14 @@ package mobapp.lh150094.multiplicationlh;
 
 import android.support.annotation.NonNull;
 
+import java.io.Serializable;
 import java.util.Iterator;
 
 /**
  * Created by lh150094 on 22/01/19.
  */
 
-public class Calculs implements Iterable<String> {
+public class Calculs implements Iterable<String>, Serializable {
     private String[] calculs;
     private int curs;
 
@@ -25,13 +26,14 @@ public class Calculs implements Iterable<String> {
     public Iterator<String> iterator() {
         return new CalculIterator();
     }
+    public int getCurs(){return curs;}
 
 
 
-    private class CalculIterator implements Iterator<String>{
+    private class CalculIterator implements Iterator<String>, Serializable{
 
         CalculIterator(){
-            curs = 0;
+            //curs = 0;
         }
         @Override
         public boolean hasNext() {

@@ -2,11 +2,14 @@ package mobapp.lh150094.multiplicationlh;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,7 +20,14 @@ public class MultiplicationLH extends AppCompatActivity {
     private List<Boolean> result;
     private Iterator<String> iterCalc;
 
+    /*TextView theOperation;
+    EditText repUser;*/
+
     String text;
+
+    private int nbResume = 0;
+    private int nbPause = 0;
+    private int nbDestroy = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,18 +44,71 @@ public class MultiplicationLH extends AppCompatActivity {
         TextView theOperation = (TextView) findViewById(R.id.operation);
         theOperation.setText(text);
 
+        /*Toast myToast = Toast.makeText(this, "curs: " +calc.getCurs(), Toast.LENGTH_LONG);
+        myToast.setGravity(Gravity.CENTER, 0, 0);
+        myToast.show();*/
+
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        /*Toast myToast = Toast.makeText(this, "on start", Toast.LENGTH_LONG);
+        myToast.setGravity(Gravity.CENTER, 0, 0);
+        myToast.show();*/
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        /*Toast myToast = Toast.makeText(this, "on resume " + (++nbResume), Toast.LENGTH_LONG);
+        myToast.setGravity(Gravity.CENTER, 0, 0);
+        myToast.show();*/
+        Toast myToast = Toast.makeText(this, "curs: " +calc.getCurs(), Toast.LENGTH_LONG);
+        myToast.setGravity(Gravity.CENTER, 0, 0);
+        myToast.show();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Toast myToast = Toast.makeText(this, new String("on pause " + (++nbPause)), Toast.LENGTH_LONG);
+        myToast.setGravity(Gravity.CENTER, 0, 0);
+        myToast.show();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+       /* Toast myToast = Toast.makeText(this, "on destroy " + (++nbDestroy), Toast.LENGTH_LONG);
+        myToast.setGravity(Gravity.CENTER, 0, 0);
+        myToast.show();*/
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle bundle){
+        bundle.putInt("nbPause", nbPause);
+        /*private Calculs calc;
+        private List<Boolean> result;
+        private Iterator<String> iterCalc;*/
+        bundle.putSerializable("calc", calc);
+        bundle.putSerializable("result", (LinkedList<Boolean>)result);
+        super.onSaveInstanceState(bundle);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle bundle){
+        super.onRestoreInstanceState(bundle);
+        nbPause = bundle.getInt("nbPause");
+        calc = (Calculs) bundle.getSerializable("calc");
+        result = (List<Boolean>)bundle.getSerializable("result");
+        this.iterCalc = calc.iterator();
     }
 
     public void verifOp(View view) {
 
         TextView theOperation = (TextView) findViewById(R.id.operation);
         EditText repUser      = (EditText) findViewById(R.id.rep);
-
-
-
-
-
-        //if(view == null) return;
 
         if(view != null && !text.equals("fini")) {
             Scanner sc = new Scanner(theOperation.getText().toString().replaceAll(" ", ""));

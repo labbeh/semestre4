@@ -1,0 +1,4 @@
+------------------------------------------------------------------------------<br/>
+AJAX permet de faire des requ&ecirc;tes asynchrones vers un serveur web.<br/>
+Cela permet de rendre les pages plus dynamiques.<br/>
+------------------------------------------------------------------------------

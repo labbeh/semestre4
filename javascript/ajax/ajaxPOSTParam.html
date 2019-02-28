@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<!--
+Requete AJAX avec transmission de parametres avec la methode GET
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<title>Exemple de requ&ecirc;te AJAX simple avec GET</title>
+<script>
+function traiterResultat(xmlhttp) {
+ if (xmlhttp.readyState==4 && xmlhttp.status==200)
+ {
+  document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+ }
+}
+
+function preparerXHR()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+  	{// code for IE7+, Firefox, Chrome, Opera, Safari
+ 		 xmlhttp=new XMLHttpRequest();
+  	}
+	else
+  	{// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  	}
+
+	xmlhttp.addEventListener("readystatechange",function(e) { traiterResultat(xmlhttp); });
+   	return xmlhttp;
+}
+
+function requeteAJAX(xmlhttp) {
+	var nomSaisi = document.getElementById("nom").value;
+	var ageSaisi = document.getElementById("age").value;
+	xmlhttp.open("POST","ajaxPOSTParam.php",true);
+	//on ajoute un entete dans la requete permettant d'indiquer comment
+	//est structuré le contenu de la requête (ici sous la forme :
+	//param=val&param2=val2...)
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.send("nom="+nomSaisi+"&age="+ageSaisi);
+}
+
+function initEvents(event) {
+		 var xhr = preparerXHR();
+                 var elem = document.getElementById("bouton");
+                 elem.addEventListener("click", function(e) {requeteAJAX(xhr);}, false);
+};
+
+window.addEventListener("load", initEvents, false);
+</script>
+
+<style>
+#myDiv {
+    position:absolute;
+    background-color:#AAAAAA;
+    left : 10px;
+    width:1000px;
+    top:100px;
+    height:100px;
+    padding : 5px;
+}
+
+#form {
+    position:absolute;
+    left : 10px;
+    top : 230px;
+}
+</style>
+</head>
+
+<body>
+<h1>Un exemple de requ&ecirc;te AJAX simple avec envoi de donn&eacute;es au serveur via la m&eacute;thode POST</h1>
+
+<div id="myDiv"><h2>Ce texte va &ecirc;tre modifi&eacute; par un texte r&eacute;cup&eacute;r&eacute; via une requ&ecirc;te AJAX </h2>
+</div>
+
+<div id="form">
+Saisir un nom : <input type="text" id="nom" name="nom" value="Dupont">
+<br/>
+Saisir un age  : <input type="text" id="age" name="age" value="20">
+<br/>
+<button id="bouton" type="button">Modifier le texte</button>
+</div>
+
+</body>
+</html>

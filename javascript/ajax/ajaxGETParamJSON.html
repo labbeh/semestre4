@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<!--
+Requete AJAX avec transmission de parametres avec la methode GET
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<title>Exemple de requ&ecirc;te AJAX simple avec GET</title>
+<script>
+function traiterResultat(xmlhttp) {
+ if (xmlhttp.readyState==4 && xmlhttp.status==200)
+ {
+  var rep = xmlhttp.responseText;
+  var obj = JSON.parse(rep);
+  document.getElementById("myDiv").innerHTML= obj.val + " -> " + obj.carre + " -> " + obj.cube;
+ }
+}
+
+function preparerXHR()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+  	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+  	}
+	else
+  	{// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  	}
+
+	xmlhttp.addEventListener("readystatechange",function(e) { traiterResultat(xmlhttp); });
+	return xmlhttp;
+}
+
+function requeteAJAX(xmlhttp) {
+	var nbSaisi = document.getElementById("nb").value;
+	xmlhttp.open("GET","ajaxGETParamJSON.php?nb="+nbSaisi,true);
+	xmlhttp.send();
+}
+
+function initEvents(event) {
+		 var xhr = preparerXHR();
+                 var elem = document.getElementById("bouton");
+                 elem.addEventListener("click", function () { requeteAJAX(xhr); }, false);
+};
+
+window.addEventListener("load", initEvents, false);
+</script>
+
+<style>
+#myDiv {
+    position:absolute;
+    background-color:#AAAAAA;
+    left : 10px;
+    width:1000px;
+    top:100px;
+    height:100px;
+    padding : 5px;
+}
+
+#form {
+    position:absolute;
+    left : 10px;
+    top : 230px;
+}
+</style>
+</head>
+
+<body>
+<h1>Un exemple de requ&ecirc;te AJAX simple avec envoi de donn&eacute;es au serveur</h1>
+
+<div id="myDiv"><h2>Ce texte va &ecirc;tre modifi&eacute; via une requ&ecirc;te AJAX </h2>
+</div>
+
+<div id="form">
+Saisir un nom : <input type="text" id="nb" name="nb" value="2">
+<button id="bouton" type="button">Saisir un nombre</button>
+</div>
+
+</body>
+</html>
