@@ -1,5 +1,6 @@
 package mobapp.lh150094.multiplicationlh;
 
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -106,6 +107,8 @@ public class MultiplicationLH extends AppCompatActivity {
     }
 
     public void verifOp(View view) {
+        Vibrator vibor = (Vibrator)getSystemService(this.VIBRATOR_SERVICE) ;
+        vibor.vibrate(500);
 
         TextView theOperation = (TextView) findViewById(R.id.operation);
         EditText repUser      = (EditText) findViewById(R.id.rep);
@@ -115,17 +118,33 @@ public class MultiplicationLH extends AppCompatActivity {
             theOperation.setText(theOperation.getText().toString().replaceAll(" ", ""));
 
             sc.useDelimiter("x");
+            try {
+                int op1 = Integer.parseInt(sc.next());
+                int op2 = Integer.parseInt(sc.next().replaceAll("=", ""));
 
-            int op1 = Integer.parseInt(sc.next());
-            int op2 = Integer.parseInt(sc.next().replaceAll("=", ""));
+                this.result.add((op1 * op2) == Integer.parseInt(repUser.getText().toString()));
 
-            this.result.add((op1 * op2) == Integer.parseInt(repUser.getText().toString()));
-
-            // DEBUG
-            TextView tw = findViewById(R.id.affichageReponses);
-            tw.setText(op1 + " x " + op2 + " = " +(op1*op2) + " rep " +Integer.parseInt(repUser.getText().toString()));
+                // DEBUG
+                TextView tw = findViewById(R.id.affichageReponses);
+                tw.setText(op1 + " x " + op2 + " = " + (op1 * op2) + " rep " + Integer.parseInt(repUser.getText().toString()));
+            }
+            catch(Exception evt){
+                Toast myToast = Toast.makeText(this, new String("ERREUR"), Toast.LENGTH_LONG);
+                myToast.setGravity(Gravity.TOP, 0, 0);
+                myToast.show();
+                return;
+            }
         }
-        else if(text.equals("fini")) {
+
+
+        repUser.setText("");
+
+        if(iterCalc.hasNext()) text = iterCalc.next();
+        else                   text = "fini";
+
+        theOperation.setText(text);
+
+        if(text.equals("fini")) {
             Button btn = findViewById(R.id.btnValider);
             btn.setEnabled(false);
 
@@ -138,15 +157,8 @@ public class MultiplicationLH extends AppCompatActivity {
             }
 
             afficherReponses(affResult.toString());
+            vibor.vibrate(4000);
         }
-
-        repUser.setText("");
-
-        if(iterCalc.hasNext()) text = iterCalc.next();
-        else                   text = "fini";
-
-        theOperation.setText(text);
-
 
     }
 

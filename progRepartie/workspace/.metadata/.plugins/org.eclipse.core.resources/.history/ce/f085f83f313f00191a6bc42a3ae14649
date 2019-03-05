@@ -1,0 +1,13 @@
+package tcp.date;
+
+public class ServeurDate {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

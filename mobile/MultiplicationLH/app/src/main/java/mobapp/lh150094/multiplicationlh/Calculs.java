@@ -33,7 +33,7 @@ public class Calculs implements Iterable<String>, Serializable {
     private class CalculIterator implements Iterator<String>, Serializable{
 
         CalculIterator(){
-            //curs = 0;
+            curs = 0;
         }
         @Override
         public boolean hasNext() {

@@ -34,55 +34,25 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Philosophe.java" partName="Philosophe.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/metier/Philosophe.java" title="Philosophe.java" tooltip="progRepartie/src/philosophes/metier/Philosophe.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/metier/Philosophe.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1249" selectionTopPixel="913"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Serveur.java" partName="Serveur.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/tcp/Serveur.java" title="Serveur.java" tooltip="sockets/src/tcp/Serveur.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/tcp/Serveur.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="437" selectionTopPixel="143"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Controleur.java" partName="Controleur.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/Controleur.java" title="Controleur.java" tooltip="progRepartie/src/philosophes/Controleur.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/Controleur.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="1843" selectionTopPixel="1017"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/tcp/Client.java" title="Client.java" tooltip="sockets/src/tcp/Client.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/tcp/Client.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="303" selectionTopPixel="23"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EnsemblePhilosophe.java" partName="EnsemblePhilosophe.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/metier/ensembles/EnsemblePhilosophe.java" title="EnsemblePhilosophe.java" tooltip="progRepartie/src/philosophes/metier/ensembles/EnsemblePhilosophe.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/metier/ensembles/EnsemblePhilosophe.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1073" selectionTopPixel="488"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServeurDate.java" partName="ServeurDate.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/tcp/date/ServeurDate.java" title="ServeurDate.java" tooltip="sockets/src/tcp/date/ServeurDate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/tcp/date/ServeurDate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="576" selectionTopPixel="244"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/Main.java" title="Main.java" tooltip="progRepartie/src/philosophes/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="393" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PileAssiette.java" partName="PileAssiette.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/metier/ensembles/PileAssiette.java" title="PileAssiette.java" tooltip="progRepartie/src/philosophes/metier/ensembles/PileAssiette.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/metier/ensembles/PileAssiette.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1227" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fourchette.java" partName="Fourchette.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/metier/Fourchette.java" title="Fourchette.java" tooltip="progRepartie/src/philosophes/metier/Fourchette.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/metier/Fourchette.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="925" selectionTopPixel="943"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Assiette.java" partName="Assiette.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/metier/Assiette.java" title="Assiette.java" tooltip="progRepartie/src/philosophes/metier/Assiette.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/metier/Assiette.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lanceur.java" partName="Lanceur.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/tpSemaphore/parking/Lanceur.java" title="Lanceur.java" tooltip="progRepartie/src/tpSemaphore/parking/Lanceur.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/tpSemaphore/parking/Lanceur.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="122"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vehicule.java" partName="Vehicule.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/tpSemaphore/parking/Vehicule.java" title="Vehicule.java" tooltip="progRepartie/src/tpSemaphore/parking/Vehicule.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/tpSemaphore/parking/Vehicule.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="993" selectionTopPixel="1000"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NombreIncorrectExcpetion.java" partName="NombreIncorrectExcpetion.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/progRepartie/src/philosophes/exceptions/NombreIncorrectExcpetion.java" title="NombreIncorrectExcpetion.java" tooltip="progRepartie/src/philosophes/exceptions/NombreIncorrectExcpetion.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progRepartie/src/philosophes/exceptions/NombreIncorrectExcpetion.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="154" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientDate.java" partName="ClientDate.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/tcp/date/ClientDate.java" title="ClientDate.java" tooltip="sockets/src/tcp/date/ClientDate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/tcp/date/ClientDate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="622" selectionTopPixel="203"/>
 </editor>
 </editors>
 <views>
@@ -121,7 +91,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (17 items)"/>
+<category IMemento.internal.id="Warnings (29 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="705" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -154,7 +124,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -332,165 +302,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/Controleur.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/metier/ensembles/EnsemblePhilosophe.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/metier/Philosophe.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/metier/Fourchette.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/metier/ensembles/EnsemblePhilosophe.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/metier/Assiette.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/progRepartie/src/philosophes/metier/ensembles/PileAssiette.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/Client.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/date/ServeurDate.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/date/ClientDate.java"/>
 </editors>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="133" y="24"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="1">
-<position info="not_deleted" x="2407" y="24"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1679" y="51"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="1">
-<position info="not_deleted" x="3790" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="133" y="24"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1679" y="51"/>
-</item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1765" y="0"/>
-</item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Fourchette.java" index="4">
-<position info="not_deleted" x="925" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1765" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1889" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="133" y="24"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1889" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="402" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1889" y="0"/>
-</item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="402" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1889" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="397" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1845" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="397" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="367" y="27"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="3862" y="0"/>
-</item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
-</item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="3862" y="0"/>
-</item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="809" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="3862" y="0"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="473" y="0"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="459" y="6"/>
-</item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="1073" y="0"/>
-</item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="367" y="27"/>
-</item>
-<item historyLabel="Assiette.java" index="7">
+<item historyLabel="ClientDate.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="PileAssiette.java" index="8">
-<position info="not_deleted" x="1227" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="876" y="0"/>
 </item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="1129" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="777" y="20"/>
 </item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="337" y="6"/>
 </item>
-<item historyLabel="EnsemblePhilosophe.java" index="6">
-<position info="not_deleted" x="1073" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position/>
 </item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="1129" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position/>
 </item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="1060" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="858" y="11"/>
 </item>
-<item historyLabel="Philosophe.java" index="3">
-<position info="not_deleted" x="1249" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="744" y="0"/>
 </item>
-<item historyLabel="Controleur.java" index="0">
-<position info="not_deleted" x="1843" y="32"/>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="348" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="393" y="0"/>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="744" y="0"/>
 </item>
-<item active="true" historyLabel="Fourchette.java" index="4">
-<position info="not_deleted" x="925" y="0"/>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="348" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="348" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="238"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="419" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="238"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="419" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="238"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="419" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="924" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="762" y="64"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="631" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="382" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="406" y="94"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="576" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="Client.java" index="0">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="784" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="528" y="0"/>
+</item>
+<item historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="576" y="0"/>
+</item>
+<item historyLabel="ClientDate.java" index="2">
+<position info="not_deleted" x="622" y="0"/>
+</item>
+<item active="true" historyLabel="ServeurDate.java" index="1">
+<position info="not_deleted" x="576" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -509,6 +473,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientDate.java" tooltip="sockets/src/tcp/date/ClientDate.java">
+<persistable path="/sockets/src/tcp/date/ClientDate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServeurDate.java" tooltip="sockets/src/tcp/date/ServeurDate.java">
+<persistable path="/sockets/src/tcp/date/ServeurDate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="sockets/src/tcp/Client.java">
+<persistable path="/sockets/src/tcp/Client.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Serveur.java" tooltip="sockets/src/tcp/Serveur.java">
+<persistable path="/sockets/src/tcp/Serveur.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NombreIncorrectExcpetion.java" tooltip="progRepartie/src/philosophes/exceptions/NombreIncorrectExcpetion.java">
 <persistable path="/progRepartie/src/philosophes/exceptions/NombreIncorrectExcpetion.java"/>
 </file>
@@ -541,18 +517,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PileAssiette.java" tooltip="progRepartie/src/philosophes/metier/PileAssiette.java">
 <persistable path="/progRepartie/src/philosophes/metier/PileAssiette.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Controleur.java" tooltip="progRepartie/src/philosophes/Controleur.java">
-<persistable path="/progRepartie/src/philosophes/Controleur.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PileAssiettes.java" tooltip="progRepartie/src/philosophes/metier/PileAssiettes.java">
-<persistable path="/progRepartie/src/philosophes/metier/PileAssiettes.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Philosophe.java" tooltip="progRepartie/src/philosophes/metier/Philosophe.java">
-<persistable path="/progRepartie/src/philosophes/metier/Philosophe.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lanceur.java" tooltip="progRepartie/src/tpSemaphore/equipes/Lanceur.java">
-<persistable path="/progRepartie/src/tpSemaphore/equipes/Lanceur.java"/>
 </file>
 </mruList>
 </workbench>

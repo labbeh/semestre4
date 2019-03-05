@@ -1,0 +1,26 @@
+package mvc;
+
+import java.util.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class CommandeXXX implements Commande {
+  //l'attribut next contient le nom de la JSP cible
+  //ie. la JSP devant être activée suite
+  //à l'exécution de la commande.
+  private String next;
+
+  public CommandeXXX(String next) {
+        this.next = next;
+  }
+
+  public String execute(HttpServletRequest req) throws Exception {
+
+	  // traitement specifique à la commande
+	  //...
+	  // passage de parametres à la JSP cible:
+	  req.setAttribute("param", param);
+
+          return next;
+  }
+}
