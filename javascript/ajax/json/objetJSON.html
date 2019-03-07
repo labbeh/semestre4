@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h2>Cr&eacute;ation d'un objet JSON en JavaScript</h2>
+
+		<p id="demo"></p>
+
+		<script>
+			var text = '{"nom":"Jean Patrick","rue":"16 rue Joncourt","tel": ["0689234657","0101010101","0202020202"]}';
+
+			var obj = JSON.parse(text);
+
+			document.getElementById("demo").innerHTML =
+			obj.nom + "<br>" +
+			obj.rue + "<br>" +
+			obj.tel[2];
+		</script>
+
+	</body>
+</html>
+

@@ -70,6 +70,14 @@
 
     // affichage du contenu de la page au passage de la souris
     function sourisOn(event){
+      // on crééer l'élément div pour n'afficher le cadre gris
+      // que quand le pointeur est sur le lien
+      var divPage = document.createElement("div");
+      divPage.setAttribute("id", "page");
+
+      document.body.appendChild(divPage);
+      //document.body.insertBefore(newDiv, currentDiv)
+
       requeteAJAX(event.target);
       //console.log(event.target);
     }
@@ -77,7 +85,9 @@
     // nettoyage du cadre
     function sourisOut(event){
       var page = document.getElementById("page");
-      page.innerHTML = "";
+
+      // on supprime la div qui contient la page
+      page.remove();
     }
 
     function traiterResultat(req) {
@@ -126,9 +136,6 @@
         <a href="page4.html">Page 4</a><br/>
 	</li>
 	  </ul>
-    </div>
- 
-    <div id="page">
     </div>
  
   </body>
