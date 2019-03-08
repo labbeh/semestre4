@@ -16,7 +16,6 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="tp2.prodCons.ProdConso"/>
 <fullyQualifiedTypeName name="tpSemaphore.parking.Parking"/>
-<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="tpSemaphore.parking.Vehicule"/>
 <fullyQualifiedTypeName name="tpSemaphore.equipes.Telephone"/>
 <fullyQualifiedTypeName name="tpSemaphore.equipes.Equipe"/>
@@ -31,11 +30,15 @@
 <fullyQualifiedTypeName name="philosophes.metier.Philosophe"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Service"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="java.net.DatagramSocket"/>
 <fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="java.net.DatagramPacket"/>
 </qualifiedTypeNameHistroy>

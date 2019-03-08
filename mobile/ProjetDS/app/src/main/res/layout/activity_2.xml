@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ds.lh150094.projetds.Activity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/clickme"
+                android:onClick="incClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliquez moi !" />
+
+            <Button
+                android:id="@+id/retour"
+                android:onClick="retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retour" />
+
+            <TextView
+                android:id="@+id/clickInit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtClicksInit" />
+
+            <TextView
+                android:id="@+id/nbClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtNbClicks" />
+        </GridLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
