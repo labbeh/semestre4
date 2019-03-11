@@ -12,10 +12,10 @@ public class Controleur extends HttpServlet {
     //hashmap permettant d'associer à chaque nom de commande son droit d'accès (all ou admin)
     private Map<String,String> mapDroits;
 
-    private static final String JSP_ERREUR_INIT = "/erreurs/erreurInitControleur.jsp";
-    private static final String JSP_ERREUR_CMD = "/erreurs/erreurCommande.jsp";
+    private static final String JSP_ERREUR_INIT   = "/erreurs/erreurInitControleur.jsp";
+    private static final String JSP_ERREUR_CMD 	  = "/erreurs/erreurCommande.jsp";
     private static final String JSP_EXCEPTION_CMD = "/erreurs/exceptionCommande.jsp";
-    public static final String JSP_ERREUR_DROIT = "/erreurs/erreurDroit.jsp";
+    public  static final String JSP_ERREUR_DROIT  = "/erreurs/erreurDroit.jsp";
 
     private static final String SERVLET_CONTROLE_SESSION = "/controleSession";
 
