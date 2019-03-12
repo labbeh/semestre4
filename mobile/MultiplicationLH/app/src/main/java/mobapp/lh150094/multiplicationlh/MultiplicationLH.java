@@ -89,9 +89,6 @@ public class MultiplicationLH extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle bundle){
         bundle.putInt("nbPause", nbPause);
-        /*private Calculs calc;
-        private List<Boolean> result;
-        private Iterator<String> iterCalc;*/
         bundle.putSerializable("calc", calc);
         bundle.putSerializable("result", (LinkedList<Boolean>)result);
         super.onSaveInstanceState(bundle);

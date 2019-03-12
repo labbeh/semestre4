@@ -1,0 +1,22 @@
+package multicast;
+
+import java.net.*;
+
+public class EmetteurMulticastIP {
+	
+	/**
+	 * 
+	 * */
+	public static void main (String args[]) throws Exception{
+		String message = "Hello world!!!";
+		
+		MulticastSocket ms = new MulticastSocket();
+		InetAddress mcast = InetAddress.getByName("225.1.1.1");
+		DatagramPacket dp = new DatagramPacket(message.getBytes(),message.length(), mcast,2009);
+		
+		for (int i=0; i<10; i++)
+			ms.send(dp);
+		
+		ms.close();
+	}
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="792" maximized="true" width="1006" x="334" y="34">
 <fastViewData fastViewLocation="1024"/>
@@ -19,6 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="238" y="36"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -34,6 +35,8 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -50,9 +53,17 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/tcp/thread/ServeurDataT.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="457" selectionTopPixel="43"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientDateT.java" partName="ClientDateT.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/tcp/thread/ClientDateT.java" title="ClientDateT.java" tooltip="sockets/src/tcp/thread/ClientDateT.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientDateT.java" partName="ClientDateT.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/tcp/thread/ClientDateT.java" title="ClientDateT.java" tooltip="sockets/src/tcp/thread/ClientDateT.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/tcp/thread/ClientDateT.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="471" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RecepteurMulticastIP.java" partName="RecepteurMulticastIP.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/multicast/RecepteurMulticastIP.java" title="RecepteurMulticastIP.java" tooltip="sockets/src/multicast/RecepteurMulticastIP.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/multicast/RecepteurMulticastIP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1297" selectionTopPixel="703"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmetteurMulticastIP.java" partName="EmetteurMulticastIP.java" path="/home/etudiant/lh150094/TP/semestre4/progRepartie/workspace/sockets/src/multicast/EmetteurMulticastIP.java" title="EmetteurMulticastIP.java" tooltip="sockets/src/multicast/EmetteurMulticastIP.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sockets/src/multicast/EmetteurMulticastIP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="584" selectionTopPixel="163"/>
 </editor>
 </editors>
 <views>
@@ -92,7 +103,8 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (35 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (38 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="705" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -303,162 +315,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/thread/ServeurDataT.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/thread/Service.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/thread/ClientDateT.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/udp/Serveur.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/udp/Client.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/tcp/date/ServeurDate.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/multicast/RecepteurMulticast.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/multicast/RecepteurMulticastIP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/multicast/dsds.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sockets/src/multicast/EmetteurMulticastIP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/sockets/src/logs/log.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/sockets/src/logs/log.txt"/>
 </editors>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="283" y="6"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="333" y="14"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="380" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="387" y="17"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="585" y="20"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="497" y="0"/>
-</item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="76" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="497" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="552" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="539" y="5"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="807" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="853" y="0"/>
-</item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="76" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="856" y="0"/>
-</item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="393" y="0"/>
-</item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="76" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="546" y="0"/>
-</item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="350" y="0"/>
-</item>
-<item historyLabel="ClientDateT.java" index="2">
+<item historyLabel="ClientDateT.java" index="0">
 <position info="not_deleted" x="734" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="393" y="0"/>
-</item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="350" y="0"/>
-</item>
-<item historyLabel="Serveur.java" index="3">
+<item historyLabel="RecepteurMulticast.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="653" y="0"/>
-</item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="278" y="14"/>
-</item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="351" y="14"/>
-</item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="298" y="24"/>
-</item>
-<item historyLabel="Serveur.java" index="3">
+<item historyLabel="RecepteurMulticast.java" index="1">
 <position/>
 </item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="431" y="0"/>
+<item historyLabel="RecepteurMulticast.java" index="1">
+<position/>
 </item>
-<item historyLabel="Client.java" index="4">
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="315" y="20"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="490" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="570" y="11"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="653" y="15"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="673" y="0"/>
+</item>
+<item historyLabel="dsds.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="674" y="0"/>
-</item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="368" y="14"/>
-</item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="466" y="11"/>
-</item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="415" y="14"/>
-</item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="364" y="20"/>
-</item>
-<item historyLabel="Client.java" index="4">
+<item historyLabel="dsds.java" index="3">
 <position/>
 </item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="616" y="0"/>
+<item historyLabel="dsds.java" index="3">
+<position/>
 </item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="431" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="716" y="0"/>
 </item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="616" y="0"/>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="673" y="0"/>
 </item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="431" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="716" y="0"/>
 </item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="616" y="0"/>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="673" y="0"/>
 </item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="431" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="716" y="0"/>
 </item>
-<item historyLabel="Client.java" index="4">
-<position info="not_deleted" x="616" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="713" y="0"/>
 </item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="734" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="509" y="0"/>
 </item>
-<item historyLabel="Serveur.java" index="3">
-<position info="not_deleted" x="431" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="490" y="7"/>
 </item>
-<item historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="734" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="709" y="0"/>
 </item>
-<item historyLabel="ServeurDate.java" index="5">
-<position info="not_deleted" x="576" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="601" y="0"/>
 </item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="256" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="524" y="0"/>
 </item>
-<item historyLabel="ServeurDate.java" index="5">
-<position info="not_deleted" x="576" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="721" y="0"/>
 </item>
-<item historyLabel="ServeurDataT.java" index="0">
-<position info="not_deleted" x="457" y="0"/>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="673" y="0"/>
 </item>
-<item active="true" historyLabel="ClientDateT.java" index="2">
-<position info="not_deleted" x="734" y="0"/>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="721" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="701" y="0"/>
+</item>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="663" y="0"/>
+</item>
+<item historyLabel="log.txt" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="584" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="701" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="488" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="477" y="6"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="453" y="4"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="997" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1346" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="997" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1343" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1138" y="31"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1055" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1213" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1297" y="0"/>
+</item>
+<item historyLabel="EmetteurMulticastIP.java" index="4">
+<position info="not_deleted" x="584" y="0"/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1297" y="0"/>
+</item>
+<item historyLabel="log.txt" index="6">
+<position/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1297" y="0"/>
+</item>
+<item historyLabel="log.txt" index="6">
+<position/>
+</item>
+<item historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1297" y="0"/>
+</item>
+<item historyLabel="log.txt" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="RecepteurMulticastIP.java" index="2">
+<position info="not_deleted" x="1297" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -477,6 +490,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="log.txt" tooltip="sockets/src/logs/log.txt">
+<persistable path="/sockets/src/logs/log.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="dsds.java" tooltip="sockets/src/multicast/dsds.java">
+<persistable path="/sockets/src/multicast/dsds.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RecepteurMulticast.java" tooltip="sockets/src/multicast/RecepteurMulticast.java">
+<persistable path="/sockets/src/multicast/RecepteurMulticast.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="sockets/src/udp/Client.java">
 <persistable path="/sockets/src/udp/Client.java"/>
 </file>
@@ -512,15 +534,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vehicule.java" tooltip="progRepartie/src/tpSemaphore/parking/Vehicule.java">
 <persistable path="/progRepartie/src/tpSemaphore/parking/Vehicule.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lanceur.java" tooltip="progRepartie/src/tpSemaphore/parking/Lanceur.java">
-<persistable path="/progRepartie/src/tpSemaphore/parking/Lanceur.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parking.java" tooltip="progRepartie/src/tpSemaphore/parking/Parking.java">
-<persistable path="/progRepartie/src/tpSemaphore/parking/Parking.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Assiette.java" tooltip="progRepartie/src/philosophes/metier/Assiette.java">
-<persistable path="/progRepartie/src/philosophes/metier/Assiette.java"/>
 </file>
 </mruList>
 </workbench>

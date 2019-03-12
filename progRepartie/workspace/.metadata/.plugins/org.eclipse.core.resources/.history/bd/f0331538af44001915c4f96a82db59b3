@@ -1,0 +1,25 @@
+package multicast;
+
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+
+public class RecepteurMulticastIP {
+	
+	/**
+	 * 
+	 * */
+	public static void main (String args[]) throws Exception {
+		InetAddress mcast = InetAddress.getByName("225.1.1.1");
+		MulticastSocket ms = new MulticastSocket(2009);
+		
+		ms.joinGroup(mcast);
+		
+		while (true) {
+			DatagramPacket msg = new DatagramPacket(new byte[512], 512);
+			ms.receive(msg);
+			System.out.println(msg.getAddress() + ":" +msg.getPort() +
+			"a envoyé " + new String(msg.getData()));
+		}
+	}
+}
