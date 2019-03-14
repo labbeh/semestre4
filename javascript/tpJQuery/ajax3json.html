@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script>
+			// La fonction alerte modifie la couleur de fond des titres h1
+			// avec la couleur dont le nom est renvoyé par le serveur en Json
+			majCouleur = function(donnees, resultat, xhr) {
+			  // À COMPLETER
+			}
+
+			// La fonction ajaxCouleur est la fonction effectuant la requête ajax vers le serveur
+			demanderCouleur = function() {
+			  // À COMPLETER
+			}
+
+			// La fonction init associe au bouton "Test ajax couleur" la fonction
+			// effectuant la requête ajax
+			init = function() {
+			  $(":button").on("click", prepareXHR);
+			}
+
+			prepareXHR = function(lien){
+				var xmlhttp;
+			    xmlhttp=new XMLHttpRequest();
+
+
+			    xmlhttp.open("GET",lien,true);
+			    xmlhttp.send(null);
+			    //xmlhttp.addEventListener("readystatechange",function(event) {traiterResultat(xmlhttp);});
+			}
+
+			$(document).ready(init);
+		</script>
+	</head>
+
+	<body>
+		<h1>Titre</h1>
+		<h2>Sous-Titre</h2>
+
+		<input type="button" id="bCouleur" value="Test ajax couleur"/>
+	</body>
+</html>

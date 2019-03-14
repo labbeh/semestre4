@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+raz = function() {
+  $("*").css({"background-color" :"", "text-align" :"", "font-weight" : "", "color" : ""});
+}
+titre = function() {
+  $("h1").css({"background-color" : "red", "text-align" : "center"});
+}
+titres2 = function() {
+  $("h2").css({"color" : "blue"});
+}
+titres2div = function() {
+  $("div h2").css({"font-weight" : "normal"});
+}
+idPrems = function() {
+  $("#prems").css({"background-color" : "yellow"});
+  console.log("jaune");
+}
+intros = function() {
+  $(".intro").css({"border" : "solid 5px black"});
+}
+attributAlt = function() {
+  $("img[alt]").attr({"style" : "border: solid 2px red"});
+}
+altSuppr = function() {
+  $("img[alt=suppression]").attr({"style" : "border: dotted 2px purple"});
+}
+sansAlt = function() {
+  $("img").not("[alt]").attr({"style" : "border : solid 8px red"});
+}
+function initEvents(event) {
+  var bouton = document.getElementById("raz");
+  bouton.addEventListener("click", raz, false);
+  bouton = document.getElementById("titre");
+  bouton.addEventListener("click", titre, false);
+  bouton = document.getElementById("titres2");
+  bouton.addEventListener("click", titres2, false);
+  bouton = document.getElementById("titres2div");
+  bouton.addEventListener("click", titres2div, false);
+  bouton = document.getElementById("idPrems");
+  bouton.addEventListener("click", idPrems, false);
+  bouton = document.getElementById("intros");
+  bouton.addEventListener("click", intros, false);
+  bouton = document.getElementById("attributAlt");
+  bouton.addEventListener("click", attributAlt, false);
+  bouton = document.getElementById("altSuppr");
+  bouton.addEventListener("click", altSuppr, false);
+  bouton = document.getElementById("sansAlt");
+  bouton.addEventListener("click", sansAlt, false);
+}
+window.addEventListener("load",initEvents, false);
+</script>
+</head>
+<body>
+<h1>Titre</h1>
+<h2>pré-sous-titre</h2>
+<div id="haut">
+  <h2>Partie "haute"</h2>
+  <p class="intro">Voici un <span id="prems">premier</span> paragraphe <img src="iconeEdit.jpg" alt="edition"/></p>
+  <p>Voici un deuxième paragraphe<img src="iconeEdit.jpg"/></p>
+</div>
+<div id="corps">
+  <h2>Partie "corps"</h2>
+  <p class="intro">Voici un <span alt="suppression">troisième</span> paragraphe<img src="iconeEdit.jpg" alt="suppression"/></p>
+  <p>Voici un quatrième paragraphe<img src="iconeEdit.jpg"/></p>
+</div>
+<hr/>
+<input type="button" id="raz" value="R.A.Z."/>
+<input type="button" id="titre" value="titre en rouge"/>
+<input type="button" id="titres2" value="titres2 en bleu"/>
+<input type="button" id="titres2div" value="sous-titres dans div en gras"/>
+<input type="button" id="idPrems" value="idPrems en jaune"/>
+<input type="button" id="intros" value="intros encadrées"/>
+<input type="button" id="attributAlt" value="images attribut alt"/>
+<input type="button" id="altSuppr" value="attribut alt=suppression"/>
+<input type="button" id="sansAlt" value="images sans alt"/>
+</body>
+</html>

@@ -13,6 +13,8 @@ public class ControleSession extends HttpServlet {
 		//on indique d'abord au controleur qu'il y a eu forward
 		req.setAttribute("forwardOK",true);
 		//On fait le forward : A COMPLETER
+		RequestDispatcher dispatcher = req.getRequestDispatcher(pageJSP);
+		dispatcher.forward(req, res);
 	}
 
 	//cette méthode permet de récupérer le droit 
@@ -20,7 +22,7 @@ public class ControleSession extends HttpServlet {
 	//NB : il peut être "null" si personne n'est connecté
 	private Integer getDroitSession(HttpServletRequest req) {
 		Integer droitUtil = 0;
-		//A COMPLETER
+		droitUtil = (Integer)req.getAttribute("droitSession");
 		return droitUtil;
 	}
 
@@ -29,7 +31,8 @@ public class ControleSession extends HttpServlet {
 	//correspond au droit ADMIN (voir constante dans Droits.java)
 	private boolean evaluerDroitCommande(HttpServletRequest req) {
 		boolean droitCommande = false;
-		//A COMPLETER
+		droitCommande = getDroitSession(req) != null && getDroitSession(req).equals(DROIT_UTIL_ADMIN);
+
 		return droitCommande;
 	}
 

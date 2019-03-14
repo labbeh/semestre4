@@ -24,6 +24,8 @@ public class DB {
   PreparedStatement ps_select_pdts;
   PreparedStatement ps_select_pdt;
   PreparedStatement ps_update_pdt;
+  PreparedStatement ps_insert_pdt;
+  PreparedStatement ps_delete_pdt;
 
 
   private static DB instance;
@@ -53,6 +55,7 @@ public class DB {
   	ps_select_pdt = cnx.prepareStatement ("select np,lib,coul,qs from produit where np=?");
     ps_update_pdt = cnx.prepareStatement ("update produit set qs=? where np=?");
     ps_insert_pdt = cnx.prepareStatement("insert into produit values(?,?,?,?)");
+    ps_delete_pdt = cnx.prepareStatement("delete from produit where np=?");
      
   }
       
@@ -139,6 +142,11 @@ public class DB {
 			ps_update_pdt.setInt(1,p.getQs());
 			ps_update_pdt.setInt(2,p.getNp());
 			ps_update_pdt.executeUpdate();     
+  }
+
+  public void deleteProduit(Produit p) throws Exception {
+    ps_delete_pdt.setInt(1, p.getNp());
+    ps_delete_pdt.executeUpdate();
   }
 
   // =============================================================================================================

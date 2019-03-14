@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+div p:hover {
+border: 1px solid blue;
+}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+var num = 1;// pour identifier les paragraphes
+// La fonction init doit associer à chaque paragraphe (existant ou à venir)
+// dans la balise "div" d'identifiant "text" une réaction à un clic consistant
+// à afficher dans une boîte de dialogue un message "clic sur paragraphe n"
+// ou 'n' est le numéro du paragraphe sur lequel on a cliqué
+init = function() {
+   $("div#texte").on("click", "p", function(event){alert("paragraphe " +this.id);});
+   $(":button").on("click", ajouterParagraphe);
+}
+$(document).ready(init);
+// La fonction ajouterParagraphe ajoute à la fin du bloc "div" un nouveau
+// paragraphe avec un identifiant ad hoc.
+ajouterParagraphe = function() {
+	num++;
+   $("div#texte").append("<p id =" +num+ "> un autre paragraphe </p>");
+}
+</script>
+</head>
+<body>
+<div id="texte">
+  <h1>Partie 1</h1>
+  <p id = "1">
+    Voici un paragraphe.
+  </p>
+</div>
+<hr/>
+<div>
+<input type="button" value="Ajouter Paragraphe"/>
+</div>
+</body>
+</html>

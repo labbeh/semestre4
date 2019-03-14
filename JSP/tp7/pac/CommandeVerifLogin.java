@@ -29,18 +29,38 @@ public class CommandeVerifLogin implements Commande {
 	  //si login et mot de passe sont ok, alors il faut creer une nouvelle session et stocker dedans
 	  //le droit de la personne connectee. Dans ce cas, c'est accueil.jsp qui doit etre activee.
 	  //NB : on accepte deux comptes : user/userpwd et admin/adminpwd.
-	  /*String login = req.getParameter("nom");
+
+	  String login = req.getParameter("nom");
 	  String pass  = req.getParameter("pass" );
+	  String typeSession = null;
 
 	  if(login.length()==0){
 			//aucun nom n'a ete saisi
 			//on stocker le message d'erreur dans la requete
-	  		req.setAttribute("msgErr", "Saisir nom et pass");
+	  		req.setAttribute("erreur", "Saisir nom et pass");
 
 			//on memorise que l'on va ensuite activer login.jsp (voir fin de la mÃ©thode)
 			cible = "login.jsp";
-	  	}*/
+			return cible;
+	  	}
 
+	  else{
+	  	if 	   (login.equalsIgnoreCase("user") && pass.equalsIgnoreCase("userpwd"  )) typeSession = "all";
+	  	else if(login.equalsIgnoreCase("admin") && pass.equalsIgnoreCase("adminpwd")) typeSession = "admin";
+	  	else 																		  typeSession = null;
+	  }
+
+	  if(typeSession == null){
+	  	req.setAttribute("erreur", "Nom d'utilisateur ou mot de pass invalide");
+	  	cible = "login.jsp";
+	  }
+	  else {
+	  	cible = "accueil.jsp";
+	  	Integer droitSession  = null;
+
+	  	if(typeSession.equals("all")) droitSession = Droits.
+	  	req.setAttribute("droitSession", )
+	  }
       return cible;
   }
 
