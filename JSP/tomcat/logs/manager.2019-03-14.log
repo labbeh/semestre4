@@ -1,0 +1,54 @@
+mars 14, 2019 1:44:18 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+mars 14, 2019 1:44:18 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+mars 14, 2019 1:44:18 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 1:44:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 1:44:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 1:52:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 1:52:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 1:53:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 1:53:06 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:06:27 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:06:28 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:07:52 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:07:52 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:12:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:12:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:27:51 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:27:51 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:37:46 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:37:47 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:54:11 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:54:11 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 2:54:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 2:54:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 3:10:50 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 3:10:51 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+mars 14, 2019 3:11:45 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/mvc'
+mars 14, 2019 3:11:46 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'

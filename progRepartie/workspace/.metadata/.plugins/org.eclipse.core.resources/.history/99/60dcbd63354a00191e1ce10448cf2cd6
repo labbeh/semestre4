@@ -1,0 +1,14 @@
+package chat.metier.local;
+
+import java.util.Vector;
+
+public class GestionMessages {
+	/**
+	 * Ensembles des messages partagées sur la session de chat
+	 * */
+	private Vector<String> msgs;
+	
+	public GestionMessages(){
+		msgs = new Vector<>();
+	}
+}

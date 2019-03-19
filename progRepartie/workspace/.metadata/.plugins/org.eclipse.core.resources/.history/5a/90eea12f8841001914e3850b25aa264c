@@ -1,5 +1,0 @@
-package tcp.thread;
-
-public class Service extends Thread {
-
-}

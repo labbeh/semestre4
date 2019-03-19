@@ -1,0 +1,25 @@
+package chat.ihm.panels;
+
+import javax.swing.JFrame;
+
+import chat.ihm.panels.dessin.ChoixCouleurs;
+import chat.ihm.panels.dessin.PanelDessin;
+import chat.ihm.panels.dessin.Selection;
+
+public class PartieDessin extends JFrame {
+	/**
+	 * Panel de sélection de l'item que l'on veut dessiner
+	 * */
+	private Selection selection;
+	
+	/**
+	 * Panel représentant la zone de dessin
+	 * */
+	private PanelDessin dessin;
+	
+	/**
+	 * Panel de sélection des couleurs
+	 * */
+	private ChoixCouleurs couleurs;
+
+}

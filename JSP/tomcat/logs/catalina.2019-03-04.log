@@ -1,0 +1,122 @@
+mars 04, 2019 10:25:45 AM org.apache.catalina.core.AprLifecycleListener init
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+mars 04, 2019 10:25:45 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:25:45 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 402 ms
+mars 04, 2019 10:25:45 AM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+mars 04, 2019 10:25:45 AM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.47
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Collab de l'application web
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/docs de l'application web
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/host-manager de l'application web
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/bado de l'application web
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/ROOT de l'application web
+mars 04, 2019 10:25:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/examples de l'application web
+mars 04, 2019 10:25:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/manager de l'application web
+mars 04, 2019 10:25:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli2 de l'application web
+mars 04, 2019 10:25:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli1 de l'application web
+mars 04, 2019 10:25:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Formulaires de l'application web
+mars 04, 2019 10:25:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli5 de l'application web
+mars 04, 2019 10:25:48 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:25:48 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:25:49 AM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 3691 ms
+mars 04, 2019 10:30:49 AM org.apache.catalina.core.StandardServer await
+INFOS: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+mars 04, 2019 10:30:49 AM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:30:49 AM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:30:49 AM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+mars 04, 2019 10:30:49 AM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:30:50 AM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:30:50 AM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:30:50 AM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:30:53 AM org.apache.catalina.core.AprLifecycleListener init
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+mars 04, 2019 10:30:53 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:30:53 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:30:53 AM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 330 ms
+mars 04, 2019 10:30:53 AM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+mars 04, 2019 10:30:53 AM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.47
+mars 04, 2019 10:30:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Collab de l'application web
+mars 04, 2019 10:30:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/docs de l'application web
+mars 04, 2019 10:30:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/host-manager de l'application web
+mars 04, 2019 10:30:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/bado de l'application web
+mars 04, 2019 10:30:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/ROOT de l'application web
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/examples de l'application web
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/manager de l'application web
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli2 de l'application web
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli1 de l'application web
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Formulaires de l'application web
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli5 de l'application web
+mars 04, 2019 10:30:54 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 10:30:54 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 10:30:54 AM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 1570 ms
+mars 04, 2019 10:50:21 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/mvc de l'application web
+mars 04, 2019 10:56:31 AM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 04, 2019 10:56:31 AM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 04, 2019 10:56:32 AM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 04, 2019 11:29:12 AM org.apache.catalina.core.StandardServer await
+INFOS: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+mars 04, 2019 11:29:12 AM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 11:29:12 AM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 11:29:12 AM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+mars 04, 2019 11:29:12 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/bado] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 04, 2019 11:29:12 AM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 11:29:12 AM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8300"]
+mars 04, 2019 11:29:12 AM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8200"]
+mars 04, 2019 11:29:12 AM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8300"]

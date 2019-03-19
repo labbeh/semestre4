@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="tp1.PlusieursThreads"/>
-<fullyQualifiedTypeName name="tp1.CascadeThread"/>
-<fullyQualifiedTypeName name="tp2.Bonbonniere"/>
 <fullyQualifiedTypeName name="tp2.Enfant"/>
 <fullyQualifiedTypeName name="tp2.tprint.Affichage"/>
 <fullyQualifiedTypeName name="tp2.tprint.TPrint"/>
@@ -41,10 +36,28 @@
 <fullyQualifiedTypeName name="java.net.MulticastSocket"/>
 <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.impl.protocol.giopmsgheaders.Message"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="chat.ihm.panels.dessin.Selection"/>
+<fullyQualifiedTypeName name="chat.ihm.panels.dessin.PanelDessin"/>
+<fullyQualifiedTypeName name="chat.ihm.panels.dessin.ChoixCouleurs"/>
+<fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
+<fullyQualifiedTypeName name="chat.ihm.Fenetre"/>
+<fullyQualifiedTypeName name="chat.ihm.panels.PartieDessin"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="chat.ihm.panels.PartieText"/>
+<fullyQualifiedTypeName name="javax.swing.JTextArea"/>
+<fullyQualifiedTypeName name="javax.swing.JTextField"/>
+<fullyQualifiedTypeName name="java.awt.GridBagConstraints"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="java.awt.GridBagLayout"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="chat.metier.local.GestionMessages"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+
+    <!-- definition de la vue a activer par defaut au lancement de l'application -->
+    <welcome-file-list>
+		<welcome-file>accueil.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- parametres de l'application web : pour le controleur -->
+
+    <!-- declaration des differentes commandes de l'application sous forme de parametres de l'applications-->
+    <!-- le nom de la commande doit etre de la forme cmd-nomCommande -->
+    <!-- la valeur de chaque parametre est composee des 3 elements suivants : -->
+    <!-- 1. Le nom de la classe de commande associee a la commande -->
+    <!-- 2. Le nom de la JSP (la vue) qui devra etre activee suite a l'execution de la commande -->
+    <!-- 3. Le droit associee a la commande : -->
+    <!--	all -> accessible a tout utilisateur, --> 
+    <!-- 	admin -> accessible uniquement aux utilisateurs ayant le droit admin -->
+    <context-param>
+        <param-name>cmd-accueil</param-name>
+		<param-value>commandes.NullCommande;accueil.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-login</param-name>
+        <param-value>commandes.CommandeVerifLogin;accueil.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-erreurDroit</param-name>
+        <param-value>commandes.CommandeErreurDroit;accueil.jsp;all</param-value>
+    </context-param>
+
+   <!-- <context-param>
+        <param-name>cmd-utils</param-name>
+        <param-value>commandes.NullCommande;accueil.jsp;all</param-value>
+    </context-param> -->
+
+    <context-param>
+        <param-name>cmd-serveurs</param-name>
+        <param-value>commandes.CommandeServeur;serveurs.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-connexions</param-name>
+        <param-value>commandes.CommandeConnexion;connexions.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-utils</param-name>
+        <param-value>commandes.CommandeUtils;utilisateurs.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-utilsMAJ</param-name>
+        <param-value>commandes.CommandeUtils;utilsMAJ.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-supprUtilisateur</param-name>
+        <param-value>commandes.NullCommande;utilisateurs.jsp;all</param-value>
+    </context-param>
+    <!-- declaration de la servlet controleur -->
+    <servlet>
+      <servlet-name>controleur</servlet-name>
+      <servlet-class>Controleur</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>controleur</servlet-name>
+        <url-pattern>/controleur</url-pattern>
+    </servlet-mapping>
+
+    <!-- declaration de la servlet qui controle la session (activee par le controleur) -->
+    <servlet>
+      <servlet-name>controleSession</servlet-name>
+      <servlet-class>ControleSession</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>controleSession</servlet-name>
+        <url-pattern>/controleSession</url-pattern>
+    </servlet-mapping>
+
+    
+</web-app>

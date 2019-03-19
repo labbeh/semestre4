@@ -4,6 +4,8 @@
 		<item value="596" key="DIALOG_X_ORIGIN"/>
 		<item value="205" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="InstallationDialogSettings">
 		<item value="918" key="DIALOG_WIDTH"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>

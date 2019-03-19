@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * TextViiwer avec la barre de progression
      * */
-    TextView tvProg = findViewById(R.id.status);
+    //TextView tvProg = findViewById(R.id.status);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         i = 0;
     }
 
+    /**
+     * Converti la palette de couleur sde l'image en
+     * une palette echelle de gris
+     * */
     public void toNvGris(View view) {
         int imageID = imgs[i];
         Bitmap original = BitmapFactory.decodeResource(getResources(), imageID);
@@ -73,7 +77,11 @@ public class MainActivity extends AppCompatActivity {
         iv.setImageBitmap(nvlImg);
     }
 
+    /**
+     * Pixelise l'image
+     * */
     public void pixeliseImage(View view) {
+
     }
 
     public void quit(View view) {

@@ -1,0 +1,304 @@
+mars 11, 2019 10:21:30 AM org.apache.catalina.core.AprLifecycleListener init
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+mars 11, 2019 10:21:31 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8200"]
+mars 11, 2019 10:21:31 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8300"]
+mars 11, 2019 10:21:31 AM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 396 ms
+mars 11, 2019 10:21:31 AM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+mars 11, 2019 10:21:31 AM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.47
+mars 11, 2019 10:21:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Collab de l'application web
+mars 11, 2019 10:21:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/docs de l'application web
+mars 11, 2019 10:21:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/host-manager de l'application web
+mars 11, 2019 10:21:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/mvc de l'application web
+mars 11, 2019 10:21:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/bado de l'application web
+mars 11, 2019 10:21:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/ROOT de l'application web
+mars 11, 2019 10:21:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/examples de l'application web
+mars 11, 2019 10:21:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/manager de l'application web
+mars 11, 2019 10:21:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli2 de l'application web
+mars 11, 2019 10:21:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli1 de l'application web
+mars 11, 2019 10:21:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Formulaires de l'application web
+mars 11, 2019 10:21:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /home/etudiant/lh150094/tomcat/webapps/Appli5 de l'application web
+mars 11, 2019 10:21:41 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8200"]
+mars 11, 2019 10:21:41 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8300"]
+mars 11, 2019 10:21:41 AM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 9985 ms
+mars 11, 2019 11:43:51 AM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 11:43:52 AM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 1:53:12 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 1:53:12 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 1:53:13 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 1:53:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 1:53:53 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 1:53:53 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 1:54:03 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 1:54:04 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 1:58:44 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 1:58:44 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:00:16 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:00:16 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:06:37 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:06:37 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:06:37 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:06:38 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:06:39 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:06:39 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:10:08 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:10:08 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:10:08 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:10:08 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:10:16 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:10:17 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:10:39 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:10:39 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:10:40 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:10:42 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:10:42 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:11:06 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:11:07 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:11:10 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:11:10 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:11:11 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:11:11 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:11:12 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:12:21 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:12:21 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:12:22 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:12:25 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:12:31 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:12:52 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:12:52 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:12:52 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:12:52 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:12:57 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:12:57 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:13:02 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:13:02 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:13:03 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:14:49 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:14:50 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:14:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:14:53 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:14:53 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:18:02 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:18:02 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:18:03 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:18:03 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:18:04 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:18:14 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:18:14 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:18:14 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:19:22 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:19:23 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:19:25 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:19:25 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:19:25 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:20:19 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:20:19 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:20:19 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:20:25 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:20:25 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:20:26 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:23:16 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:23:16 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:23:16 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:23:16 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:23:18 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:23:19 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:24:08 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:24:08 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:24:08 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:24:08 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:25:45 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:25:46 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:26:10 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:26:12 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:26:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:26:18 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:26:18 PM org.apache.catalina.util.LifecycleBase start
+INFOS: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/mvc]] after start() had already been called. The second call will be ignored.
+mars 11, 2019 2:27:03 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:27:03 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:27:03 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:27:04 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:27:06 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:27:06 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:29:02 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:29:02 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:29:03 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:29:09 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:29:09 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:29:09 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:29:10 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:29:40 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:29:40 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:29:40 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:29:40 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:29:41 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:29:42 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:32:16 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:32:16 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:32:17 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:32:20 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:32:20 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:32:20 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:32:21 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:35:11 PM org.apache.catalina.startup.HostConfig checkResources
+INFOS: Reloading context [/mvc]
+mars 11, 2019 2:35:11 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement du contexte [/mvc] a démarré
+mars 11, 2019 2:35:11 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/mvc] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 11, 2019 2:35:12 PM org.apache.catalina.core.StandardContext reload
+INFOS: Le rechargement de ce contexte est terminé
+mars 11, 2019 2:42:06 PM org.apache.catalina.core.StandardServer await
+INFOS: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+mars 11, 2019 2:42:06 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8200"]
+mars 11, 2019 2:42:06 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8300"]
+mars 11, 2019 2:42:06 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+mars 11, 2019 2:42:07 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8200"]
+mars 11, 2019 2:42:07 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8300"]
+mars 11, 2019 2:42:07 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8200"]
+mars 11, 2019 2:42:07 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8300"]

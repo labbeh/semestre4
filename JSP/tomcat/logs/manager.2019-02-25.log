@@ -1,0 +1,36 @@
+févr. 25, 2019 1:37:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+févr. 25, 2019 1:37:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+févr. 25, 2019 1:37:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 1:37:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 1:37:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 1:44:38 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 1:44:38 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 2:29:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 2:29:36 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 2:29:36 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 2:31:10 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 2:31:10 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 2:34:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 2:34:50 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 2:36:29 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 2:36:29 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+févr. 25, 2019 2:39:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/Appli5'
+févr. 25, 2019 2:39:24 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'

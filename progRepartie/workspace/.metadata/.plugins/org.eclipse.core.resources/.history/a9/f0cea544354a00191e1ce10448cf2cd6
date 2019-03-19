@@ -1,0 +1,5 @@
+package chat.metier.local;
+
+public class GestionMessages {
+
+}

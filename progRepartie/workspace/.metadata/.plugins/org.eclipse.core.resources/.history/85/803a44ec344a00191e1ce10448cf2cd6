@@ -1,0 +1,5 @@
+package chat.ihm.panels.dessin;
+
+public interface IDessinable {
+
+}

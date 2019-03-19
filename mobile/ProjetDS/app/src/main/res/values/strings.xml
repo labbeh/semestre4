@@ -3,4 +3,5 @@
     <string name="title_activity_2">Activity2</string>
     <string name="txtNbClicks">Nombre de clics: </string>
     <string name="txtClicksInit">Nombre de clics initiaux: </string>
+    <string name="title_activity_test">test</string>
 </resources>

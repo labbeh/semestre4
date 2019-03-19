@@ -1,0 +1,11 @@
+package chat.ihm.panels;
+
+import javax.swing.JPanel;
+
+public class PartieText extends JPanel {
+	
+	public PartieText(){
+		super();
+		
+	}
+}

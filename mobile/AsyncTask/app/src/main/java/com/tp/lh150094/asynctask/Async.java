@@ -8,7 +8,7 @@ import android.widget.TextView;
  */
 
 public class Async extends AsyncTask<Integer, Integer, Integer> {
-    private TextView tv;
+    /*private TextView tv;
 
     public Async(TextView tv){
         this.tv = tv;

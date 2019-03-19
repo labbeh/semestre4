@@ -1,0 +1,7 @@
+package chat.ihm.panels.dessin;
+
+import javax.swing.JPanel;
+
+public class ChoixCouleurs extends JPanel {
+
+}
