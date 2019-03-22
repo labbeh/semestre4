@@ -1,0 +1,54 @@
+package chat.metier.reseau;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+
+import chat.Controleur;
+
+/**
+ * Classe de gestion de la réception et l'envoie de message pour un client
+ * */
+public class Client {
+	/**
+	 * Pointeur vers l'instance du controleur
+	 * */
+	private Controleur ctrl;
+	
+	/**
+	 *   adresse IP 
+	**/
+	private InetAddress mcast;
+	
+	
+	/**
+	 *   Port 
+	**/
+	private MulticastSocket ms;
+	
+	/**
+	 * Constructeur de la classe Client
+	 * @param ip ip du serveur en int
+	 * @param port port de communication en String
+	 */
+	public Client( Controleur ctrl, int port, String ip ){
+		this.ctrl = ctrl;
+		
+		try{
+			ms = new MulticastSocket(port);
+			mcast = InetAddress.getByName(ip);
+		}
+		catch(IOException evt){System.out.println(evt);}
+	}
+	
+	/**
+	 * Méthode permettant de lancer le client
+	 */
+	public void lancer(String message){
+		DatagramPacket dp = new DatagramPacket(message.getBytes(),message.length(), mcast,4596);
+		
+		try 				  {ms.send(dp);		   }
+		catch (IOException e) {e.printStackTrace();}
+	}
+}

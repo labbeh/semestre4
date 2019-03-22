@@ -1,0 +1,34 @@
+package chat.metier.local;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GestionMessages {
+	/**
+	 * Ensembles des messages partagées sur la session de chat
+	 * */
+	private List<String> msgs;
+	
+	/**
+	 * Constructeur par défaut
+	 * */
+	public GestionMessages(){
+		msgs = new ArrayList<>();
+	}
+	
+	/**
+	 * Permet d'insérer un message dans la session de chat courante
+	 * du client
+	 * @param msg le message à insérer en String
+	 * */
+	public synchronized void ajouterMsg(String msg){
+		msgs.add(msg);
+	}
+	
+	/**
+	 * Permet d'obtenir le dernier message envoyé
+	 * */
+	public synchronized String getDernierMsg(){
+		return msgs.get(msgs.size()-1);
+	}
+}

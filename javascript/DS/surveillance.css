@@ -1,0 +1,56 @@
+.deconnecte {
+  color: lightgrey;
+}
+.vert {
+  color: lightgreen;
+}
+.rouge {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+.page {
+}
+
+.section {
+  position: relative;
+}
+
+.affichage {
+  width: 800px;
+  left: 0px;
+  top: 0px;
+  position: static;
+}
+
+.ajout {
+  float: right;
+  width: 500px;
+  right: 0px;
+  top: 0px;
+  clear:both;
+  position: absolute;
+}
+
+.h2 {
+  position: absolute;
+}
+
+#voyants {
+  background-color: oldLace;
+}
+
+#capteursSimules {
+  background-color: lightCyan;
+}
+
+#capteursReels {
+  background-color: lavenderBlush;
+}

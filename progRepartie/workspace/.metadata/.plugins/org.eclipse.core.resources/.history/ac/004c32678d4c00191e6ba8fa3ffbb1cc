@@ -1,0 +1,30 @@
+package chat.metier.local;
+
+import chat.Controleur;
+
+/**
+ * Classe métier permettant la gestion des éléments
+ * puis les renvoies au controleur
+ * */
+
+public class Gestion {
+	/**
+	 * Pointeur vers l'instance du controleur
+	 * */
+	private Controleur ctrl;
+	
+	/**
+	 * Instance du mécanisme de gestion des messages
+	 * */
+	private GestionMessages messages;
+	
+	public Gestion(Controleur ctrl){
+		this.ctrl = ctrl;
+		
+		this.messages = new GestionMessages();
+	}
+	
+	public void envoyerMessage(String message){
+		messages.ajouterMsg(message);
+	}
+}

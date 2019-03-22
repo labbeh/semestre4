@@ -1,0 +1,46 @@
+package chat.metier.reseau;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+
+public class Serveur {
+	/**
+	 * Adresse ip
+	 */
+	private InetAddress mcast;
+	
+	/**
+	 * Port récepteur
+	 */
+	private MulticastSocket ms;
+	
+	/**
+	 * Constructeur de la classe Serveur
+	 * @param ip ip du serveur en String
+	 * @param port port du serveur en int
+	 * @throws IOException 
+	 */
+	public Serveur (String ip, int port) throws IOException
+	{
+		mcast = InetAddress.getByName(ip);
+		ms = new MulticastSocket(port);
+		ms.joinGroup(mcast);
+	}
+	
+	/**
+	 * Méthode permettant de lancer le serveur
+	 * @throws IOException 
+	 */
+	public void lancement () throws IOException
+	{
+		while (true) 
+		{
+			DatagramPacket msg = new DatagramPacket(new byte[512], 512);
+			ms.receive(msg);
+			System.out.println(msg.getAddress() + ":" +msg.getPort() +
+			"a envoyé " + new String(msg.getData()));
+		}
+	}
+}

@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 
+import chat.ihm.ecouteurs.EnvoieMessage;
 import chat.ihm.panels.PartieDessin;
 import chat.ihm.panels.PartieText;
 
@@ -61,15 +62,23 @@ public class Fenetre extends JFrame {
 		
 		
 		
-		pack();
+		//pack();
+		setSize(1024, 768);
 		setVisible(true);
+	}
+	
+	/**
+	 * Permet de définir l'écouteur que déclenchera le text field lors de l'appuie sur la touche entrée
+	 * */
+	public void setEcouteurEnvoieMsg(EnvoieMessage ecouteur){
+		((PartieText) ptChat).setEcouteurEnvoieMsg(ecouteur);
 	}
 	
 	/**
 	 * A SUPPRIMER JUSTE POUR TESTS
 	 * */
-	public static void main(String[] arv){
+	/*public static void main(String[] arv){
 		new Fenetre();
-	}
+	}*/
 
 }

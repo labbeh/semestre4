@@ -1,0 +1,26 @@
+package chat;
+
+import chat.ihm.Fenetre;
+import chat.ihm.ecouteurs.EnvoieMessage;
+
+public class Controleur {
+	/**
+	 * Instance vers l'ihm
+	 * */
+	private Fenetre ihm;
+	
+	public Controleur(){
+		init();
+	}
+	
+	/**
+	 * Initialise l'application
+	 * */
+	public void init(){
+		// instanciation des listener
+		EnvoieMessage listenerMsg = new EnvoieMessage();
+		
+		// instanciation de l'ihm
+		ihm = new Fenetre();
+	}
+}

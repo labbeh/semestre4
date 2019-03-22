@@ -1,0 +1,57 @@
+package chat;
+
+import chat.ihm.Fenetre;
+import chat.ihm.ecouteurs.EnvoieMessage;
+import chat.metier.local.Gestion;
+
+public class Controleur {
+	/**
+	 * Instance vers l'ihm
+	 * */
+	private Fenetre ihm;
+	
+	/**
+	 * Gestion
+	 * */
+	private Gestion gestion;
+	
+	
+	public Controleur(){
+		this.gestion = new Gestion(this);
+		init();
+	}
+	
+	/**
+	 * Initialise l'application
+	 * */
+	public void init(){
+		// instanciation des listener
+		EnvoieMessage listenerMsg = new EnvoieMessage(this);
+		
+		// instanciation de l'ihm
+		ihm = new Fenetre();
+		
+		// on met en place les écouteurs
+		ihm.setEcouteurEnvoieMsg(listenerMsg);
+	}
+	
+	/**
+	 * Permet d'initialiser l'application en tant que client
+	 * */
+	public void initClient(){
+		
+	}
+	
+	/**
+	 * Permet d'initialiser l'application en tant que serveur
+	 * */
+	public void initServeur(){
+		
+	}
+
+	public void envoyerMessage(String text) {
+		gestion.envoyerMessage(text);
+	}
+	
+	
+}

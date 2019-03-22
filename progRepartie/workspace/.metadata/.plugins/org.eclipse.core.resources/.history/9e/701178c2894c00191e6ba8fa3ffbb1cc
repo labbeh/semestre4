@@ -1,0 +1,7 @@
+package chat.ihm.ecouteurs;
+
+import java.awt.event.ActionListener;
+
+public class EnvoieMessage implements ActionListener {
+
+}
