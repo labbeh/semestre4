@@ -35,7 +35,7 @@ public class Controleur {
 	 * Initialise la situation de départ
 	 * */
 	public void init() {
-		coords = TraitementImage.detecterContour(nomImg);
+		coords = TraitementImage.getMasque(nomImg);
 		System.out.println(coords.size());
 	}
 	

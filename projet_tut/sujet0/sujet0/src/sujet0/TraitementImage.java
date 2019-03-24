@@ -20,12 +20,12 @@ public class TraitementImage {
 	private TraitementImage() {}
 	
 	/**
-	 * Permet de détecter les contours d'une image avec canal alpha et fond transparent
+	 * Permet de détecter les contours d'une image (masque) avec canal alpha et fond transparent
 	 * @param nomImage nom du fichier image sur lequel opérer
 	 * @return une List de coordonnées contenant la position de chaque
-	 * pixel contour de l'image
+	 * pixel constituant le masque
 	 * */
-	public static List<Coordonnees> detecterContour(String nomImg){
+	public static List<Coordonnees> getMasque(String nomImg){
 		List<Coordonnees> coords = new ArrayList<>();
 		BufferedImage img = null;
 		
@@ -41,10 +41,11 @@ public class TraitementImage {
 		// traitement
 		if(!img.getColorModel().hasAlpha()) // on vérifie que l'image à un canal alpha
 			return null;
+		
 		// pour le moment on retourne les pixels transparents
 		for(int x=0; x<img.getWidth(); x++)
 			for(int y=0; y<img.getHeight(); y++)
-				if(estTransparent(img, x, y))
+				if(!estTransparent(img, x, y))
 					coords.add(new Coordonnees(x, y));
 		return coords;
 	}
