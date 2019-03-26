@@ -1,7 +1,8 @@
-package sujet0;
+package sujet0.metier;
 
 /**
- * Classe repr�sentant les coordonn�es d'un pixel
+ * Classe représentant les coordonnées d'un pixel
+ * @author amélie nioche hugo labbé, yann reibel, clément jeanne dit fouque, louis-pierre aubert
  * */
 public class Coordonnees {
 	/**
