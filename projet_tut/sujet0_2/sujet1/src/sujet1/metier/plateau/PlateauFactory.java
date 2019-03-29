@@ -2,6 +2,8 @@ package sujet1.metier.plateau;
 
 import java.awt.Dimension;
 
+import sujet1.Controleur;
+
 /**
  * Classe fabrique d'une instance de Plateau
  * @author amélie nioche hugo labbé, yann reibel, clément jeanne dit fouque, louis-pierre aubert
@@ -19,8 +21,8 @@ public class PlateauFactory {
 	 * @return une instance de Plateau, null en cas
 	 * de paramètre invalide
 	 * */
-	public static Plateau creerPlateau(int largeur, int hauteur) {
+	public static Plateau creerPlateau(Controleur ctrl, int largeur, int hauteur) {
 		if(largeur <=0 || hauteur <= 0) return null;
-		return new Plateau(new Dimension(largeur, hauteur));
+		return new Plateau(ctrl, new Dimension(largeur, hauteur));
 	}
 }

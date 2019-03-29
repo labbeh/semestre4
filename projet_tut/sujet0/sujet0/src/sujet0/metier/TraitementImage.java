@@ -154,7 +154,7 @@ public class TraitementImage {
             	 // On recolorie le masque en blanc
             	 img.setRGB(colonne, ligne, Color.WHITE.getRGB());
             	 if ( aUnVoisinTransparent(colonne, ligne) ){
-            		 // On ajoute � une liste les coordonn�es des points de contour de l'image
+            		 // On ajoute à une liste les coordonnées des points de contour de l'image
             		 this.contour.add(new Coordonnees(colonne, ligne));
             	 }
               }

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProjetMobile</string>
+    <string name="jeu">JOUER</string>
+    <string name="mainBatterie">Etat Batterie</string>
+
+
+    <string name="batterieCharge">la batterie est en cours de chargements</string>
+    <string name="batterie">VISUALIER LES STATISTIQUES</string>
+    <string name="moyenDeCharge">Il n\'y pas de moyen de rechargement de la batterie</string>
+
+
+    <string name="quitter">QUITTER</string>
+    <string name="score">Score :</string>
+
+
+
+
+    <string name="title_activity_jeu">Jeu</string>
+</resources>

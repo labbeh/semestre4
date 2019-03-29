@@ -51,17 +51,17 @@ public class Controleur {
 	}
 	
 	/**
-	 * Permet d'initialiser l'application en tant que client
+	 * Permet d'initialiser la partie client
 	 * */
 	public void initClient(){
-		client = new Client(this, 4596, "230.1.2.3");
+		client = new Client(this, 4597, "224.0.4.22");
 	}
 	
 	/**
-	 * Permet d'initialiser l'application en tant que serveur
+	 * Permet d'initialiser la partie serveur
 	 * */
 	public void initServeur(){
-		serveur = new Serveur(this, "230.1.2.3", 4596);
+		serveur = new Serveur(this, "224.0.4.22", 4597);
 		serveur.lancement();
 	}
 	

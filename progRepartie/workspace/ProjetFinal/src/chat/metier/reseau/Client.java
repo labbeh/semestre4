@@ -39,7 +39,7 @@ public class Client {
 			ms = new MulticastSocket(port);
 			mcast = InetAddress.getByName(ip);
 		}
-		catch(IOException evt){System.out.println(evt);}
+		catch(IOException evt){System.out.println("CLIENT: " +evt);}
 	}
 	
 	/**

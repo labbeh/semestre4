@@ -68,7 +68,15 @@ public class Philosophe extends Thread {
             return;
         }
         
+        System.out.println("Philosophe " +nom+ " essai de prendre fourchette " + fourchette1.getNum());
         fourchette1.prendre(this);
+        System.out.println("Philosophe " +nom+ " a pris fourchette " + fourchette1.getNum());
+        try{
+			Thread.sleep(3000);
+		}
+		catch(InterruptedException evt){
+			evt.printStackTrace();
+		}
         fourchette2.prendre(this);
         
 		System.out.println(nom +" a pris l'assiete " +a.getNum());
@@ -97,7 +105,7 @@ public class Philosophe extends Thread {
 	 * */
 	private void sleep() {
 		try{
-			Thread.sleep(2000 +nom.length()*2);
+			Thread.sleep(200 +nom.length()*2);
 		}
 		catch(InterruptedException evt){
 			evt.printStackTrace();

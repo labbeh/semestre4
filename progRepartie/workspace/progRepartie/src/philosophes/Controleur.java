@@ -61,13 +61,9 @@ public class Controleur {
 		// création des fourchettes et association à leurs philosphes
 		this.fourchettes = new Fourchette[n];
 		for(int i=0; i<fourchettes.length; i++) {
-			fourchettes[i] = new Fourchette();
+			fourchettes[i] = new Fourchette(this);
 			
-			//philosophes.get(i).setFourchette(fourchettes[i]);
-            
-			/*if(i-1 < 0) philosophes.get(0).setFourchette2(fourchettes[i]);
-			if(i+1 < philosophes.size()) philosophes.get(i+1).setFourchette(fourchettes[i]);
-			else 						 philosophes.get(0  ).setFourchette(fourchettes[i]);*/
+			
 		}
         
         for(int i=0; i<philosophes.size(); i++){

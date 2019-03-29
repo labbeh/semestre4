@@ -45,7 +45,7 @@ public class Serveur {
 			ms = new MulticastSocket(port);
 			ms.joinGroup(mcast);
 		}
-		catch(IOException evt){System.out.println(evt);}
+		catch(IOException evt){System.out.println("SERVEUR: " +evt);}
 	}
 	
 	/**

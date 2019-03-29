@@ -50,17 +50,7 @@ public class PileAssiette extends Stack<Assiette> {
 	 * Permet de prendre une assiette
 	 * */
 	public synchronized Assiette prendre(){
-		/*try{
-			semaphore.acquire();
-			if(!empty()) return pop();
-		}
-		catch(InterruptedException evt){
-			evt.printStackTrace();
-		}
-		
-		return null;*/
 		if(!empty()) return pop();
-		
 		return null;
 	}
 

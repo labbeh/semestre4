@@ -1,12 +1,12 @@
 public class Fusee
 {
-	// VTS = VITESSE en px/s
-	private static final double MAX_VTS = 0.100;  // 100px/s
-	private static final double MIN_VTS = 0.0001; // à l'arret si inferieur
+	// VTS = VITESSE en px/ms
+	private static final double MAX_VTS = 100;
+	private static final double MIN_VTS = 0.1; // à l'arret si inferieur
 	
-	// CELERATION en px/s²
+	// CELERATION en px/ms²
 	private static final double ACCELERATION = 0.001;
-	private static final double DECELERATION = 0.000000001;
+	private static final double DECELERATION = 0.00001;
 	
 	// DGR = DEGREE
 	private static final int MAX_DGR = 360;
@@ -14,51 +14,74 @@ public class Fusee
 	
 	private String      urlImage;
 	private Coordonnees position;
-	private double      vitesse, vecX, vecY;
+	private double      vecX, vecY;
 	private boolean     enColision;
 	private int         degre;
+	private Plateau     plateau;
 	
 	public Fusee(String img, int posX, int posY, int dgr)
 	{
 		this.urlImage   = img;
 		this.position   = new Coordonnees(posX,posY);
-		this.vitesse    = MIN_VTS;
 		this.vecX = this.vecY = 0;
 		this.enColision = false;
 		this.degre      = dgr;
+		this.plateau    = null;
 	}
 	
-	public int    getPosX()    {return this.position.getX();}
-	public int    getPosY()    {return this.position.getY();}
+	public String  getNomImg()  {return this.urlImage;       }
+	public int     getPosX()    {return this.position.getX();}
+	public int     getPosY()    {return this.position.getY();}
+	public int     getDegree()  {return this.degre;          }
+	public Plateau getPlateau() {return this.plateau;        }
 	
-	private void setVitesse(double v)
+	public void setPlateau(Plateau plateau) { this.plateau = plateau; }
+	
+	private void deplacer(double deltaT)
 	{
-		if( v > MAX_VTS )     this.vitesse = MAX_VTS;
-		else
-			if( v < MIN_VTS ) this.vitesse = MIN_VTS;
-			else              this.vitesse = v;
+		this.position.setX( this.getPosX() + (int)(this.vecX * deltaT) );
+		this.position.setY( this.getPosY() + (int)(this.vecY * deltaT) );
 	}
 	
-	public void deplacer()
+	public void acceleration()
 	{
-		this.vecX = this.vecX + this.vitesse * Math.cos(this.degre);
-		this.vecY = this.vecY + this.vitesse * Math.sin(this.degre);
+		this.vecX = this.vecX + ACCELERATION * Math.cos(Math.toRadians(this.degre));
+		this.vecY = this.vecY + ACCELERATION * Math.sin(Math.toRadians(this.degre));
 		
-		this.position.setX( (int)(this.getPosX()*this.vecX) );
-		this.position.setY( (int)(this.getPosY()*this.vecY) );
+		if( vitesse(this.vecX,this.vecY) > MAX_VTS )
+		{
+			this.vecX = MAX_VTS;
+			this.vecY = MAX_VTS;
+		}
 	}
 	
-	public void acceleration() { setVitesse(this.vitesse * ACCELERATION); }
-	public void deceleration() { setVitesse(this.vitesse * DECELERATION); }
+	public void deceleration(double deltaT)
+	{
+		double vi = vitesse(this.vecX,this.vecY);
+		double vf = vi - deltaT * DECELERATION;
+		double vd = vf / vi;
+		
+		this.vecX = this.vecX * vd;
+		this.vecY = this.vecY * vd;
+		
+		if( vitesse(this.vecX,this.vecY) < MIN_VTS )
+		{
+			this.vecX = MAX_VTS;
+			this.vecY = MAX_VTS;
+		}
+	}
+	
+	private static double vitesse(double vx, double vy)
+	{
+		return Math.sqrt(Math.hypot(vx,vy));
+	}
 	
 	public void rotation(char sens)
 	{
 		int val = 0;
 		
-		if(sens == '+')
-			val = this.degre + 5; // Sens horaire
-		else
-			val = this.degre - 5; // Sans anti-horaire
+		if(sens == '+') val = this.degre + 5; // Sens horaire
+		else            val = this.degre - 5; // Sans anti-horaire
 		
 		this.degre = ( val<MAX_DGR && val>MIN_DGR ? val : this.degre );
 	}

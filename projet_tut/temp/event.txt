@@ -1,0 +1,13 @@
+this.map.addKeyListener(new ListenerKey());
+
+// class interne
+	private class ListenerKey extends KeyAdapter
+	{
+		public void keyPressed(KeyEvent evt)
+		{
+			if     (evt.getKeyCode() == KeyEvent.VK_LEFT ) ctrl.rotationAntiHoraire();
+			else if(evt.getKeyCode() == KeyEvent.VK_RIGHT) ctrl.rotationHoraire();
+			else if(evt.getKeyCode() == KeyEvent.VK_UP)    ctrl.acceleration();
+			else if(evt.getKeyCode() == KeyEvent.VK_DOWN)  ctrl.deceleration();
+		}
+	}

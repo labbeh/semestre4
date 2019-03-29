@@ -1,17 +1,13 @@
 package philosophes.metier;
 
 import java.util.concurrent.Semaphore;
+import philosophes.Controleur;
 
 public class Fourchette {
-	/**
-	 * Référence vers un des deux philosophes ayant accès à la fourchette
-	 * */
-	private Philosophe ph1;
-	
-	/**
-	 * Référence vers un des deux philosophes ayant accès à la fourchette
-	 * */
-	private Philosophe ph2;
+    /**
+     * Accès à l'instance du controleur
+     */
+    private Controleur ctrl;
 	
 	/**
 	 * Semaphore pour que les 2 philosophes ne prennent pas la fourchette en même temps
@@ -34,12 +30,10 @@ public class Fourchette {
 	 * @param ph1 premier philosophe ayant accès à la fourchette
 	 * @param ph2 deuxième philosophe ayant accès à la fourchette
 	 * */
-	public Fourchette() {
+	public Fourchette(Controleur ctrl) {
 		this.num = ++nbInst;
 		
-		/*this.ph1 = ph1;
-		this.ph2 = ph2;*/
-		
+        this.ctrl = ctrl;
 		 semaphore = new Semaphore(1, true);
 	}
 	
@@ -48,6 +42,7 @@ public class Fourchette {
 	 * */
 	public void prendre(Philosophe p) {
 		try{
+            ctrl.setEtat(p.getNom(), "attend accès fourchettes");
 			semaphore.acquire();
             System.out.println(p +" a pris la fouchette " +num);
 		}
