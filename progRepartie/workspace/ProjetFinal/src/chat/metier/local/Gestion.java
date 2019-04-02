@@ -5,6 +5,7 @@ import chat.Controleur;
 /**
  * Classe métier permettant la gestion des éléments
  * puis les renvoies au controleur
+ * NE SERT A RIEN A SUPPRIMER SI TJR INUTILE
  * */
 
 public class Gestion {
@@ -18,11 +19,11 @@ public class Gestion {
 	 * */
 	private GestionMessages messages;
 	
-	public Gestion(Controleur ctrl){
+	/*public Gestion(Controleur ctrl){
 		this.ctrl = ctrl;
 		
-		this.messages = new GestionMessages();
-	}
+		this.messages = new GestionMessages(ctrl);
+	}*/
 	
 	/**
 	 * Envoie un message sur le serveur

@@ -1,12 +1,16 @@
 package chat.metier.reseau;
 
+import java.awt.Color;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
+import java.util.Scanner;
 
 import chat.Controleur;
+import chat.metier.local.GestionDessin;
 import chat.metier.local.GestionMessages;
+import chat.metier.local.dessinable.Rectangle;
 
 public class Serveur {
 	/**
@@ -18,6 +22,11 @@ public class Serveur {
 	 * Gestion des messages que le serveur reçoit
 	 * */
 	private GestionMessages gestionMsgs;
+	
+	/**
+	 * Gestion des dessins reçu par le serveur
+	 * */
+	private GestionDessin gestionDessin;
 	
 	/**
 	 * Adresse ip
@@ -38,14 +47,16 @@ public class Serveur {
 	 */
 	public Serveur (Controleur ctrl, String ip, int port){
 		this.ctrl = ctrl;
-		this.gestionMsgs = new GestionMessages();
+		
+		this.gestionMsgs   = new GestionMessages(ctrl);
+		this.gestionDessin = new GestionDessin();
 		
 		try{
 			mcast = InetAddress.getByName(ip);
 			ms = new MulticastSocket(port);
 			ms.joinGroup(mcast);
 		}
-		catch(IOException evt){System.out.println("SERVEUR: " +evt);}
+		catch(IOException evt){System.out.println(evt);}
 	}
 	
 	/**
@@ -56,12 +67,12 @@ public class Serveur {
 		try{
 			while(true) {
 				DatagramPacket msg = new DatagramPacket(new byte[512], 512);
-				//System.out.println("TEST: attente de msg ...");
+				
 				ms.receive(msg);
 				
-				/*System.out.println(msg.getAddress() + ":" +msg.getPort() +
-				"a envoyé " + new String(msg.getData()));*/
-				gestionMsgs.ajouterMsg(msg.getAddress().toString(), new String(msg.getData()));
+				String message = new String(msg.getData());
+				
+				gestionMsgs.ajouterMsg(msg.getAddress().toString(), message);	
 			}
 		}
 		catch(IOException evt){

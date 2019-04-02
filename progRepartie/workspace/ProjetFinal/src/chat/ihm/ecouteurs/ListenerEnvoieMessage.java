@@ -7,13 +7,13 @@ import javax.swing.JTextField;
 
 import chat.Controleur;
 
-public class EnvoieMessage implements ActionListener {
+public class ListenerEnvoieMessage implements ActionListener {
 	/**
 	 * Pointeur vers l'instance du controleur
 	 * */
 	private Controleur ctrl;
 	
-	public EnvoieMessage(Controleur ctrl){
+	public ListenerEnvoieMessage(Controleur ctrl){
 		this.ctrl = ctrl;
 	}
 	
@@ -26,8 +26,10 @@ public class EnvoieMessage implements ActionListener {
 	public void actionPerformed(ActionEvent evt) {
 		JTextField txt = (JTextField)evt.getSource();
 		
-		if(!txt.getText().equals(""))
+		if(!txt.getText().equals("")){
 			ctrl.envoyerMessage(txt.getText());
+			ctrl.nettoyerZoneTexte();
+		}
 		
 	}
 

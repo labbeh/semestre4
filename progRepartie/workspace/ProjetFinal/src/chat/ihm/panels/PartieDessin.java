@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
 
+import chat.Controleur;
 import chat.ihm.panels.dessin.ChoixCouleurs;
 import chat.ihm.panels.dessin.PanelDessin;
 import chat.ihm.panels.dessin.Selection;
@@ -24,10 +25,10 @@ public class PartieDessin extends JPanel {
 	 * */
 	private ChoixCouleurs couleurs;
 	
-	public PartieDessin(){
+	public PartieDessin(Controleur ctrl){
 		selection = new Selection();
-		dessin = new PanelDessin();
-		couleurs = new ChoixCouleurs();
+		dessin = new PanelDessin(ctrl);
+		couleurs = new ChoixCouleurs(ctrl);
 		
 		// gestion layout
 		setLayout(new BorderLayout());
@@ -36,6 +37,11 @@ public class PartieDessin extends JPanel {
 		add(selection, BorderLayout.PAGE_START);
 		add(dessin, BorderLayout.CENTER);
 		add(couleurs, BorderLayout.PAGE_END);
+	}
+
+	public void majIHM() {
+		dessin.repaint();
+		
 	}
 
 }

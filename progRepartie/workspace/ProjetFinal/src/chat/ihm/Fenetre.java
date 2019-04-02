@@ -12,8 +12,12 @@ import java.awt.HeadlessException;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.plaf.metal.MetalLookAndFeel;
 
-import chat.ihm.ecouteurs.EnvoieMessage;
+import chat.Controleur;
+import chat.ihm.ecouteurs.ListenerEnvoieMessage;
 import chat.ihm.panels.PartieDessin;
 import chat.ihm.panels.PartieText;
 
@@ -26,14 +30,20 @@ public class Fenetre extends JFrame {
 	/**
 	 * Panel de la partie Dessin
 	 * */
-	private JPanel ptDessin;
+	private PartieDessin ptDessin;
 	
 	/**
 	 * Panel de la partie chat textuel
 	 * */
-	private JPanel ptChat;
+	private PartieText ptChat;
 
-	public Fenetre() throws HeadlessException {
+	public Fenetre(Controleur ctrl) throws HeadlessException {
+		// Obligatoire pour un affichage correct sous macOS
+        try{
+        	UIManager.setLookAndFeel(new MetalLookAndFeel());
+        }
+        catch(UnsupportedLookAndFeelException e){ e.printStackTrace(); }
+        
 		setTitle("Chat");
 		//setSize(800, 800);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -57,7 +67,7 @@ public class Fenetre extends JFrame {
 		add(ptChat);
 		
 		// partie dessin
-		ptDessin = new PartieDessin();
+		ptDessin = new PartieDessin(ctrl);
 		add(ptDessin);
 		
 		
@@ -70,8 +80,25 @@ public class Fenetre extends JFrame {
 	/**
 	 * Permet de définir l'écouteur que déclenchera le text field lors de l'appuie sur la touche entrée
 	 * */
-	public void setEcouteurEnvoieMsg(EnvoieMessage ecouteur){
+	public void setEcouteurEnvoieMsg(ListenerEnvoieMessage ecouteur){
 		((PartieText) ptChat).setEcouteurEnvoieMsg(ecouteur);
+	}
+	
+	/**
+	 * Permet de nettoyer la zone ou on taape le message
+	 * après son envoi
+	 * */
+	public void nettoyerZoneTexte(){
+		ptChat.nettoyerZoneTexte();
+	}
+
+	public void ajouterMessage(String message) {
+		ptChat.ajouterMessage(message);
+	}
+
+	public void majIHM() {
+		ptDessin.majIHM();
+		
 	}
 	
 	/**

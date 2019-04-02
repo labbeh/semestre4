@@ -1,4 +1,4 @@
-package chat.ihm.panels.dessin;
+package chat.metier.local.dessinable;
 
 public interface IDessinable {
 	public abstract String getType();

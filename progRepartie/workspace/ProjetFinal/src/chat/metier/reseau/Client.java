@@ -39,16 +39,25 @@ public class Client {
 			ms = new MulticastSocket(port);
 			mcast = InetAddress.getByName(ip);
 		}
-		catch(IOException evt){System.out.println("CLIENT: " +evt);}
+		catch(IOException evt){System.out.println(evt);}
 	}
 	
 	/**
 	 * Méthode permettant au client d'envoyer un message
 	 */
-	public void envoyerMessage(String message){
+	public synchronized void envoyerMessage(String message){
 		DatagramPacket dp = new DatagramPacket(message.getBytes(),message.length(), mcast,4596);
 		
 		try 				  {ms.send(dp);		   }
 		catch (IOException e) {e.printStackTrace();}
+	}
+	
+	/**
+	 * Permet au client d'envoyer un dessin
+	 * @param dessinableString chaine de caractère représentant l'objet 
+	 * sous forme textuelle
+	 * */
+	public synchronized void envoyerDessin(String dessinableString){
+		envoyerMessage(dessinableString);
 	}
 }
