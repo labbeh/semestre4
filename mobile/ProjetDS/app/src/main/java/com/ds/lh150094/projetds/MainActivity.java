@@ -56,10 +56,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        nbClick = data.getIntExtra("nbClicks", 0);
 
-        TextView tv = findViewById(R.id.viewClick);
-        tv.setText(txtBase +nbClick);
+        if(resultCode == RESULT_OK) {
+            nbClick = data.getIntExtra("nbClicks", 0);
+
+            TextView tv = findViewById(R.id.viewClick);
+            tv.setText(txtBase + nbClick);
+        }
     }
 
     /**

@@ -22,6 +22,7 @@
         </activity>
         <activity
             android:name=".Jeu"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_jeu"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

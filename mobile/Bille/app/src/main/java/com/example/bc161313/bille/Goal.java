@@ -6,6 +6,10 @@ package com.example.bc161313.bille;
 
 public class Goal extends Bille {
 
+    public Goal(int posX, int posY){
+        super(posX, posY);
+    }
+
     /**
      * Retourne le couleur de la bille
      * */

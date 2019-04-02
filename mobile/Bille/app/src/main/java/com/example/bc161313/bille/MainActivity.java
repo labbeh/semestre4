@@ -2,13 +2,15 @@ package com.example.bc161313.bille;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private int nbPts;
+    private int score = 0;
 
     /**
      * Instance de la classe qui va gérer la lecture et l'écriture de fichiers
@@ -35,42 +37,43 @@ public class MainActivity extends AppCompatActivity {
 
     public void onExit (View view) { finish();}
 
-    public void ptsGagne(View view){
-        TextView score = (TextView) findViewById(R.id.nbPoint);
-        this.nbPts ++;
-        score.setText("Score : " + nbPts);
-    }
-
     /**
      * Lance l'Activity du jeu
      * */
     public void lancerJeu(View view){
-        //gf.lire();
         Intent intent = new Intent(this, Jeu.class);
-        //intent.putExtra("nbClicksInit", nbClick);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
     }
 
     /**
      * Lance l'activity d'affichage des stats batterie
      * */
     public void lancerBatterie(View view){
-        //String infosBatterie = gf.lire();
         Intent intent = new Intent(this, ActivityBatterie.class);
-        //intent.putExtra("infos", "proute");
         startActivity(intent);
     }
 
 
     public void onSaveInstanceState(Bundle bagOfData){
-        bagOfData.putInt("nb_calls", nbPts);
+        bagOfData.putInt("score", score);
         super.onSaveInstanceState(bagOfData);
     }
 
     public void onRestoreInstanceState(Bundle bagOfData){
         super.onRestoreInstanceState(bagOfData);
-        nbPts = bagOfData.getInt("nb_calls");
-        TextView score = (TextView) findViewById(R.id.nbPoint);
-        score.setText("Score : " + nbPts);
+        this.score = bagOfData.getInt("score");
+
+        TextView tv = findViewById(R.id.tvScore);
+        tv.setText("Score: " +score);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        int score = data.getIntExtra("score", 0);
+        this.score = score;
+
+        TextView tv = findViewById(R.id.tvScore);
+        tv.setText("Score: " +score);
     }
 }
