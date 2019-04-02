@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Boradcast receiver pour les informations de la batterie
      * */
-    private  GestionBatterie batterie = new GestionBatterie();
+    private  GestionBatterie batterie = new GestionBatterie(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(batterie, new IntentFilter(Intent.ACTION_POWER_CONNECTED));
         registerReceiver(batterie, new IntentFilter(Intent.ACTION_POWER_DISCONNECTED));
         registerReceiver(batterie, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
-
-        gf.ecrire("yolo");
     }
 
     public void onExit (View view) { finish();}
@@ -50,7 +48,16 @@ public class MainActivity extends AppCompatActivity {
      * */
     public void lancerBatterie(View view){
         Intent intent = new Intent(this, ActivityBatterie.class);
+        intent.putExtra("infos", gf.lire());
         startActivity(intent);
+    }
+
+    /**
+     * Permet d'écrire dans le fichier d'infos batterie
+     * @param aEcrire chaine de caractère à écrire
+     * */
+    public void ecrire(String aEcrire){
+        gf.ecrire(aEcrire);
     }
 
 

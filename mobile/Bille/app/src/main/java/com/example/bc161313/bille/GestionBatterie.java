@@ -3,6 +3,7 @@ package com.example.bc161313.bille;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import java.util.Calendar;
@@ -19,14 +20,19 @@ import java.util.Date;
  * */
 public class GestionBatterie extends BroadcastReceiver {
     /**
+     * Pointeur vers l'activité principale
+     * */
+    private MainActivity mainActivity;
+
+    /**
      * Niveau de chargement de la batterie en %
      * */
     private int niveau = 0;
 
-    /**
-     * Vrai si la téléphone est sur batterie
-     * */
-    private boolean surBatterie;
+    public GestionBatterie(MainActivity activity){
+        mainActivity = activity;
+    }
+
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -35,13 +41,13 @@ public class GestionBatterie extends BroadcastReceiver {
 
         niveau = intent.getIntExtra("level", 0);
 
-        sb.append(niveau).append(';');
-       /* if(intent.getAction().equals(Intent.ACTION_BATTERY_CHANGED))
-            Toast.makeText(context,"Chargé a : " +niveau, Toast.LENGTH_SHORT).show();*/
+        sb.append(dateCourante.toString()).append(';').append(niveau).append(';');
 
         if(intent.getAction().equals(Intent.ACTION_POWER_CONNECTED))
-            Toast.makeText(context,"Branché sur secteur", Toast.LENGTH_SHORT).show();
+            sb.append("surSecteur");
         else if(intent.getAction().equals(Intent.ACTION_POWER_DISCONNECTED))
-            Toast.makeText(context,"Débranché", Toast.LENGTH_SHORT).show();
+            sb.append("surBatterie");
+        sb.append('\n');
+        mainActivity.ecrire(sb.toString());
     }
 }
