@@ -1,0 +1,28 @@
+DEBUT
+
+	boolean negatif // pour le circuit
+	d[s] = 0
+	Pour tout sommet v # s faire 
+		d[v] = +∞
+	FinPour
+
+	Pour i variant de 1 à V-1 faire 
+		Pour tout arc(u,v) faire 
+			Si d[v] > d[u] + w(u,v) alors
+				d[v] = d[u] + w(u,v)
+			FinSi
+		FinPour
+	FinPour
+
+	//Ici on essaye de trouver les circuits négatifs
+	Pour tout arc(u,v) faire
+		Si d[v] > d[u] + w(u,v) alors 
+			negatif = faux
+		sinon
+			negatif = vrai
+		Fsi
+	Fpour
+
+	Retourne negatif
+
+FIN
