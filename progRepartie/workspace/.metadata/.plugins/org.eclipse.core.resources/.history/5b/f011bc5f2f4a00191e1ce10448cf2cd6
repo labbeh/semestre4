@@ -1,7 +1,0 @@
-package chat.ihm.panels;
-
-import javax.swing.JFrame;
-
-public class PartieDessin extends JFrame {
-
-}

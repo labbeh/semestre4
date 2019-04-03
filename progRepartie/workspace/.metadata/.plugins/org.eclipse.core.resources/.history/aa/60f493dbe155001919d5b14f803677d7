@@ -1,0 +1,137 @@
+package chat.ihm.panels.dessin;
+
+import java.awt.Cursor;
+import java.awt.Graphics;
+import java.awt.LayoutManager;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JPanel;
+
+import chat.Controleur;
+import chat.metier.local.dessinable.IDessinable;
+import chat.metier.local.dessinable.Rectangle;
+
+public class PanelDessin extends JPanel {
+	/**
+	 * Pointeur vers l'instance du controleur
+	 * */
+	private Controleur ctrl;
+	
+	private Integer x1;
+	private Integer y1;
+	private Integer x2;
+	private Integer y2;
+
+	public PanelDessin(Controleur ctrl) {
+		this.ctrl = ctrl;
+		
+		this.x1 = null;
+		this.y1 = null;
+		this.x2 = null;
+		this.y2 = null;
+		
+		GestionSouris gs = new GestionSouris();
+		addMouseListener(gs);
+		addMouseMotionListener(gs);
+	}
+	
+	/**
+	 * Zone de dessin
+	 * Ne gère que les rectangle (pour le moment)
+	 * */
+	@Override
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+		// on dessine les rectangle déjà présent
+		if(ctrl.getRectangles() != null && ctrl.getRectangles().size() > 0){
+			for(IDessinable rec: ctrl.getRectangles()){
+				Rectangle temp = (Rectangle)rec;
+ 
+				g.setColor(temp.getCoul());
+				g.drawRect(temp.getX1()+5, temp.getY1()+5, temp.getX2()-temp.getX1(), temp.getY2()-temp.getY1());
+			}
+		}
+		
+		// dessin du rectangle que l'on est en train de tracer
+		if(this.x1 != null && this.y1 !=null && this.x2 != null && this.y2 !=null){
+			g.setColor(ctrl.getCoul());
+
+			if(this.x1 < this.x2 && this.y1 < this.y2)
+				g.drawRect(this.x1+5, this.y1+5, this.x2-this.x1, this.y2-this.y1);
+
+			else if(this.x1 > this.x2 && this.y1 > this.y2)
+				g.drawRect(this.x2+5, this.y2+5, this.x1-this.x2, this.y1-this.y2);
+
+			else if(this.x1 < this.x2 && this.y1 > this.y2)
+				g.drawRect(this.x1+5, this.y2+5, this.x2-this.x1, this.y1-this.y2);
+
+			else if(this.x1 > this.x2 && this.y1 < this.y2)
+				g.drawRect(this.x2+5, this.y1+5, this.x1-this.x2, this.y2-this.y1);
+		}
+	}
+	
+	/**
+	 * Gestion de la souris
+	 * */
+	private class GestionSouris extends MouseAdapter{
+		@Override
+		public void mouseEntered(MouseEvent evt) {
+			super.mouseEntered(evt);
+			setCursor(Cursor.getPredefinedCursor(Cursor.CROSSHAIR_CURSOR));
+		}
+		
+		@Override
+		public void mousePressed(MouseEvent arg0) {
+			x1 = arg0.getX();
+			y1 = arg0.getY();
+
+		}
+
+		@Override
+		public void mouseReleased(MouseEvent evt) {
+
+			if(x1 != null && x2 != null && y1 != null && y2 != null){
+				traiterValeurs();
+				ctrl.envoyerRectangle(x1, y1, x2, y2);
+			}
+			
+			x1 = null;
+			x2 = null;
+			y1 = null;
+			y2 = null;
+		}
+
+		@Override
+		public void mouseDragged(MouseEvent arg0) {
+			x2 = arg0.getX();
+			y2 = arg0.getY();
+			repaint();
+		}
+		
+		/**
+		 * On se sait pas de quel coin du rectangle l'utilisateur commencera à tracer
+		 * */
+		private void traiterValeurs(){
+			int temp = 0;
+			
+			/*if(x1 == null || x2 == null || y1 == null || y2 == null)
+				return;*/
+
+			if(x1 > x2){
+				temp = x2;
+				x2 = x1;
+				x1 = temp;
+			}
+
+			if(y1 > y2){
+				temp = y2;
+				y2 = y1;
+				y1 = temp;
+			}
+
+		}
+	}
+
+}

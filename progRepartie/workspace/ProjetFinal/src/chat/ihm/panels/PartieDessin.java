@@ -26,7 +26,7 @@ public class PartieDessin extends JPanel {
 	private ChoixCouleurs couleurs;
 	
 	public PartieDessin(Controleur ctrl){
-		selection = new Selection();
+		selection = new Selection(ctrl);
 		dessin = new PanelDessin(ctrl);
 		couleurs = new ChoixCouleurs(ctrl);
 		

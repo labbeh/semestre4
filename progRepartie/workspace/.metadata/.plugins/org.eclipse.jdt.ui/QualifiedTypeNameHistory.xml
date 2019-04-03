@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="tp2.prodCons.ProdConso"/>
 <fullyQualifiedTypeName name="tpSemaphore.parking.Parking"/>
 <fullyQualifiedTypeName name="tpSemaphore.parking.Vehicule"/>
 <fullyQualifiedTypeName name="tpSemaphore.equipes.Telephone"/>
@@ -55,9 +54,10 @@
 <fullyQualifiedTypeName name="java.net.InetAddress"/>
 <fullyQualifiedTypeName name="java.net.MulticastSocket"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="chat.Controleur"/>
 <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
 <fullyQualifiedTypeName name="chat.metier.reseau.Client"/>
 <fullyQualifiedTypeName name="chat.metier.local.GestionMessages"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
+<fullyQualifiedTypeName name="chat.Controleur"/>
 </qualifiedTypeNameHistroy>

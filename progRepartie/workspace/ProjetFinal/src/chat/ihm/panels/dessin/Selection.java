@@ -10,9 +10,17 @@ import java.awt.event.ActionListener;
  * */
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 
+import chat.Controleur;
+
 public class Selection extends JPanel {
+	/**
+	 * Pointeur vers l'instance du controleur de l'application
+	 * */
+	private Controleur ctrl;
+	
 	/**
 	 * Permet de dessiner un carré
 	 * */
@@ -46,19 +54,23 @@ public class Selection extends JPanel {
 	/**
 	 * Permet de choisir si on dessine un élément plein ou vide
 	 * */
-	private JButton pleinVide;
+	private JCheckBox plein;
 	
 	
 
-	public Selection() {
+	public Selection(Controleur ctrl) {
 		super();
+		
+		this.ctrl = ctrl;
+		
 		this.carre = new JButton("Carré");
 		this.rond = new JButton("Rond");
 		this.fleche = new JButton("Flèche");
 		this.gomme = new JButton("Gomme");
 		this.undo = new JButton("Undo");
 		this.texte = new JButton("Texte");
-		this.pleinVide = new JButton("Plein/vide");
+		//this.pleinVide = new JButton("Plein/vide");
+		plein = new JCheckBox("Plein");
 		
 		EcouteurForme ecouteur = new EcouteurForme();
 		
@@ -68,7 +80,13 @@ public class Selection extends JPanel {
 		gomme.addActionListener(ecouteur);
 		undo.addActionListener(ecouteur);
 		texte.addActionListener(ecouteur);
-		pleinVide.addActionListener(ecouteur);
+		plein.addActionListener(ecouteur);
+		
+		rond.setEnabled(false);
+		fleche.setEnabled(false);
+		gomme.setEnabled(false);
+		undo.setEnabled(false);
+		texte.setEnabled(false);
 		
 		setLayout(new GridLayout());
 		
@@ -78,7 +96,7 @@ public class Selection extends JPanel {
 		add(gomme);
 		add(undo);
 		add(texte);
-		add(pleinVide);
+		add(plein);
 	}
 	
 	/**
@@ -95,7 +113,10 @@ public class Selection extends JPanel {
 			else if(evt.getSource() == gomme	) System.out.println("gomme");
 			else if(evt.getSource() == undo		) System.out.println("undo");
 			else if(evt.getSource() == texte	) System.out.println("texte");
-			else if(evt.getSource() == pleinVide) System.out.println("pleinVide");
+			else if(evt.getSource() == plein){
+				if(plein.isSelected()) ctrl.setEstVide(false);
+				else 				   ctrl.setEstVide(true );
+			}
 		}
 		
 	}

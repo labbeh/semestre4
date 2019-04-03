@@ -3,12 +3,10 @@ package chat.metier.local;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
 import chat.Controleur;
-import chat.metier.local.dessinable.Rectangle;
 
 public class GestionMessages {
 	/**
@@ -50,7 +48,8 @@ public class GestionMessages {
 			int y2 = Integer.parseInt(sc.next());
 			
 			Color coul = Controleur.getColorByName(sc.next());
-			boolean estVide = Boolean.parseBoolean(sc.next());
+			// des \00 se mettent à la fin de la ligne pour une raison inconnu
+			boolean estVide = Boolean.parseBoolean(sc.next().replaceAll("\00", ""));
 			
 			sc.close();
 			ctrl.ajouterRectangle(x1, y1, x2, y2, coul, estVide);

@@ -1,0 +1,212 @@
+package chat;
+
+import java.awt.Color;
+import java.util.Set;
+
+import chat.ihm.Fenetre;
+import chat.ihm.ecouteurs.ListenerEnvoieMessage;
+import chat.metier.local.GestionDessin;
+import chat.metier.local.dessinable.IDessinable;
+import chat.metier.local.dessinable.Rectangle;
+import chat.metier.reseau.Client;
+import chat.metier.reseau.Serveur;
+
+public class Controleur {
+	/**
+	 * Instance vers l'ihm
+	 * */
+	private Fenetre ihm;
+	
+	/**
+	 * Gestion
+	 * */
+	//private Gestion gestion;
+	
+	/**
+	 * Pointeur vers l'instance de serveur
+	 * Null si on est juste client
+	 * */
+	private Serveur serveur;
+	
+	/**
+	 * Instance de la gestion de connexion au serveur pour le client
+	 * */
+	private Client client;
+	
+	/**
+	 * Gestions des dessins
+	 * */
+	private GestionDessin dessins;
+	
+	
+	public Controleur(){
+		//this.gestion = new Gestion(this);
+		init();
+		initClient();
+		initServeur();
+	}
+	
+	/**
+	 * Initialise l'application
+	 * */
+	public void init(){
+		dessins = new GestionDessin();
+		// instanciation des listener
+		//ListenerEnvoieMessage listenerMsg = new ListenerEnvoieMessage(this);
+		
+		// instanciation de l'ihm
+		java.awt.EventQueue.invokeLater(new ThreadIhm(this));
+		
+		// on met en place les écouteurs
+		//ihm.setEcouteurEnvoieMsg(listenerMsg);
+	}
+	
+	/**
+	 * Permet d'initialiser l'application en tant que client
+	 * */
+	public void initClient(){
+		client = new Client(this, 4596, "230.1.2.3");
+	}
+	
+	/**
+	 * Permet d'initialiser l'application en tant que serveur
+	 * */
+	public void initServeur(){
+		serveur = new Serveur(this, "230.1.2.3", 4596);
+		serveur.lancement();
+	}
+	
+	/**
+	 * Permet d'envoyer un message sur le serveur
+	 * @param text contenu du message
+	 * */
+	public synchronized void envoyerMessage(String message) {
+		client.envoyerMessage(message);
+	}
+	
+	/**
+	 * Ajoute le message envoyé dans la zone de conversation
+	 * */
+	public synchronized void ajouterMessageConvers(String message){
+		ihm.ajouterMessage(message);
+	}
+	
+	/**
+	 * Permet de nettoyer la zone ou on taape le message
+	 * après son envoi
+	 * */
+	public synchronized void nettoyerZoneTexte(){
+		ihm.nettoyerZoneTexte();
+	}
+	
+	/**
+	 * Permet d'ajouter un rectangle
+	 * */
+	public synchronized void ajouterRectangle(Integer x1, Integer y1, Integer x2, Integer y2){
+		ajouterRectangle(x1, y1, x2, y2, dessins.getCoul(), dessins.estVide());
+	}
+	
+	public synchronized void ajouterRectangle(Integer x1, Integer y1, Integer x2, Integer y2, Color coul, boolean estVide){
+		Rectangle r = new Rectangle(coul, estVide, x1, y1, x2, y2);
+		dessins.ajouterDessin(r);
+	}
+	
+	public void envoyerRectangle(int x1, int y1, int x2, int y2){
+		Rectangle r = new Rectangle(dessins.getCoul(), dessins.estVide(), x1, y1, x2, y2);
+		client.envoyerMessage(r.toString());
+		
+		
+	}
+	
+	public synchronized int getNbRect(){
+		return dessins.getDessin("rectangle").size();
+	}
+	
+	/**
+	 * Retourne l'ensemble des rectangles
+	 * */
+	public synchronized Set<IDessinable> getRectangles(){
+		return dessins.getDessin("rectangle");
+	}
+	
+	/**
+	 * Retourne la couleur actuellement sélectionnée
+	 * */
+	public Color getCoul(){
+		return dessins.getCoul();
+	}
+	
+	/**
+	 * Retourne si la forme est vide
+	 * */
+	public boolean estVide(){
+		return dessins.estVide();
+	}
+	
+	/**
+	 * Defini la couleur en cours
+	 * */
+	public void setCoul(Color coul){
+		dessins.setCoul(coul);
+	}
+	
+	/**
+	 * Défini plein ou vide
+	 * */
+	public void setEstVide(boolean estVide){
+		System.out.println(estVide);
+		dessins.setEstVide(estVide);
+	}
+	
+	/**
+	 * Permet d'obtenir le nom de la couleur
+	 * Retourne noir par défaut
+	 * */
+	public static String getColorName(Color c){
+		if	   (c.equals(Color.BLACK)) return "black";
+		else if(c.equals(Color.RED)) return "red";
+		else if(c.equals(Color.GREEN)) return "green";
+		else if(c.equals(Color.BLUE)) return "blue";
+		else if(c.equals(Color.YELLOW)) return "yellow";
+		else if(c.equals(Color.WHITE)) return "white";
+		
+		return "black";
+	}
+	
+	public static Color getColorByName(String nom){
+		if	   (nom.equals("black")) return Color.BLACK;
+		else if(nom.equals("red")) return Color.RED;
+		else if(nom.equals("green")) return Color.GREEN;
+		else if(nom.equals("blue")) return Color.BLUE;
+		else if(nom.equals("yellow")) return Color.YELLOW;
+		else if(nom.equals("white")) return Color.WHITE;
+		
+		return Color.BLACK;
+	}
+	
+	/**
+	 * Permet aux classes métiers qui accèsdent au controleur
+	 * de rafraichir le panel de dessin
+	 * */
+	public void majIHM() {
+		ihm.majIHM();
+	}
+	
+	private class ThreadIhm implements Runnable{
+        private Controleur ctrl;
+        
+        public ThreadIhm(Controleur ctrl){
+            this.ctrl = ctrl;
+        }
+
+        @Override
+        public void run() {
+            ihm = new Fenetre(ctrl);
+            // on met en place les écouteurs
+    		ListenerEnvoieMessage listenerMsg = new ListenerEnvoieMessage(this.ctrl);
+    		ihm.setEcouteurEnvoieMsg(listenerMsg);
+        }
+        
+    }
+	
+}
