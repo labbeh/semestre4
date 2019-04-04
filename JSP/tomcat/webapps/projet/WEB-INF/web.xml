@@ -34,11 +34,6 @@
         <param-value>commandes.CommandeErreurDroit;accueil.jsp;all</param-value>
     </context-param>
 
-   <!-- <context-param>
-        <param-name>cmd-utils</param-name>
-        <param-value>commandes.NullCommande;accueil.jsp;all</param-value>
-    </context-param> -->
-
     <context-param>
         <param-name>cmd-serveurs</param-name>
         <param-value>commandes.CommandeServeur;serveurs.jsp;all</param-value>
@@ -60,9 +55,61 @@
     </context-param>
 
     <context-param>
-        <param-name>cmd-supprUtilisateur</param-name>
-        <param-value>commandes.NullCommande;utilisateurs.jsp;all</param-value>
+        <param-name>cmd-connexionsMAJ</param-name>
+        <param-value>commandes.CommandeConnexion;connMAJ.jsp;all</param-value>
     </context-param>
+
+    <context-param>
+        <param-name>cmd-serveursMAJ</param-name>
+        <param-value>commandes.CommandeServeur;servMAJ.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-utilisateurMAJ</param-name>
+        <param-value>commandes.CommandeUtilMAJ;utilMAJ.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-supprUtilisateur</param-name>
+        <param-value>commandes.CommandeSupprUtilisateur;utilsMAJ.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-supprConnexion</param-name>
+        <param-value>commandes.NullCommande;connMAJ.jsp;all</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>cmd-supprServeur</param-name>
+        <param-value>commandes.CommandeSupprServeur;servMAJ.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-utilMAJValid</param-name>
+        <param-value>commandes.CommandeUtilMAJValid;majEffectue.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-connMAJValid</param-name>
+        <param-value>commandes.NullCommande;majEffectue.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-servMAJValid</param-name>
+        <param-value>commandes.CommandeServMAJValid;majEffectue.jsp;all</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>cmd-deconnect</param-name>
+        <param-value>commandes.CommandeDeconnect;login.jsp;all</param-value>
+    </context-param>
+
+    <!-- click sur un élément unique d'une liste dans la base de données -->
+    <context-param>
+        <param-name>cmd-util</param-name>
+        <param-value>commandes.CommandeUtil;connexions.jsp;all</param-value>
+    </context-param>
+
     <!-- declaration de la servlet controleur -->
     <servlet>
       <servlet-name>controleur</servlet-name>

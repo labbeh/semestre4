@@ -63,9 +63,9 @@ public class CommandeVerifLogin implements Commande {
 	  	Integer droitSession  = null;
 
 	  	// 1 pour admin, 2 pour user
-	  	if(typeSession.equals("admin")) droitSession = 1;
-	  	else droitSession = 2;
-	  	
+	  	if(typeSession.equals("admin")) droitSession = 2;
+	  	else droitSession = 1;
+
 	  	session.setAttribute("droitSession", droitSession);
 	  }
       return cible;

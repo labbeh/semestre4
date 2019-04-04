@@ -19,7 +19,7 @@
 	boolean afficheMenuAdmin = false; //si ce booléen vaut vrai, le sous-menu dédié à l'administration sera affiché
 
 	Integer droitSession = (Integer)session.getAttribute("droitSession");
-	if(/*droitSession != null &&*/ droitSession == 1) afficheMenuAdmin = true;
+	if(/*droitSession != null &&*/ droitSession == 2) afficheMenuAdmin = true;
 
 	/* A COMPLETER
 	 * En utilisant la session (attribut droit), mettre à jour 

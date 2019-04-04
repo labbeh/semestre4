@@ -22,7 +22,8 @@ public class ControleSession extends HttpServlet {
 	//NB : il peut être "null" si personne n'est connecté
 	private Integer getDroitSession(HttpServletRequest req) {
 		Integer droitUtil = 0;
-		droitUtil = (Integer)req.getAttribute("droitSession");
+		HttpSession session = req.getSession(false);
+		droitUtil = (Integer)session.getAttribute("droitSession");
 		return droitUtil;
 	}
 
@@ -42,10 +43,10 @@ public class ControleSession extends HttpServlet {
 	public void service(HttpServletRequest req, HttpServletResponse res) 
 		throws ServletException, IOException { 
 		
-		/* COMMENTAIRES A ENLEVER QUAND LES 3 METHODES PRECEDENTES SONT COMPLETEES
+		// COMMENTAIRES A ENLEVER QUAND LES 3 METHODES PRECEDENTES SONT COMPLETEES
 
 		Integer droitUtil = getDroitSession(req);
-		
+		System.out.println(droitUtil);
 		if ( droitUtil == null) {
 			//personne n'est connecté
 			//on renvoie vers la page de login			
@@ -66,7 +67,7 @@ public class ControleSession extends HttpServlet {
 			} //fin if droitCmd = ADMIN
 		} //fin else droitUtil != null
 
-		*/
+		
 
 	} //fin méthode service
 

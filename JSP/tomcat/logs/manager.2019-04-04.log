@@ -1,0 +1,150 @@
+avr. 04, 2019 9:03:14 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+avr. 04, 2019 9:03:14 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+avr. 04, 2019 9:03:14 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 9:21:38 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+avr. 04, 2019 9:21:38 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+avr. 04, 2019 9:21:38 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 9:41:02 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 9:41:03 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 9:44:17 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 9:44:17 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 9:46:14 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 9:46:15 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 9:55:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 9:55:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 9:57:55 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 9:57:55 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:01:14 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:01:15 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:03:22 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:03:23 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:08:13 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:08:13 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:10:18 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:10:18 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:35:39 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+avr. 04, 2019 10:35:39 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: init: Global resources are available
+avr. 04, 2019 10:35:39 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:35:45 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:35:47 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:55:53 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:55:54 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:56:12 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:56:13 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:56:31 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:56:32 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 10:58:00 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 10:58:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:00:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:00:08 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:01:23 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:01:24 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:03:04 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:03:04 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:06:48 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:06:50 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:18:32 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:18:32 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:32:21 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:32:22 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:41:17 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:41:17 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 11:44:46 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 11:44:47 AM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:00:28 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:00:28 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:06:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:06:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:09:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:09:33 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:12:53 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:12:54 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:13:37 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:13:37 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:15:18 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:15:19 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:16:25 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:16:26 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:18:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:18:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:24:10 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:24:10 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:24:26 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:24:27 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
+avr. 04, 2019 12:27:04 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: restart: Reloading web application '/projet'
+avr. 04, 2019 12:27:05 PM org.apache.catalina.core.ApplicationContext log
+INFOS: HTMLManager: list: Listing contexts for virtual host 'localhost'
