@@ -1,0 +1,63 @@
+projet/
+├── accueil.jsp
+├── connecMAJ.jsp
+├── connexions.jsp
+├── connMAJ.jsp
+├── erreurs
+│   ├── erreurCommande.jsp
+│   ├── erreurDroit.jsp
+│   ├── erreurInitControleur.jsp
+│   └── exceptionCommande.jsp
+├── ihm
+│   ├── imagesWA3.png
+│   ├── miseEnPageSUC1.jsp
+│   ├── miseEnPageSUC2.jsp
+│   └── site.css
+├── login.jsp
+├── majEffectue.jsp
+├── produitSupprValid.jsp
+├── serveurMAJ.jsp
+├── serveurs.jsp
+├── servMAJ.jsp
+├── utilisateurs.jsp
+├── utilMAJ.jsp
+├── utilsMAJ.jsp
+└── WEB-INF
+    ├── classes
+    │   ├── bdd
+    │   │   ├── DB_CONNEXION.class
+    │   │   ├── DBS.class
+    │   │   ├── DB_SERVEUR.class
+    │   │   ├── DB_UTILISATEUR.class
+    │   │   └── Droits.class
+    │   ├── beans
+    │   │   ├── Connexion.class
+    │   │   ├── Serveur.class
+    │   │   └── Utilisateur.class
+    │   ├── commandes
+    │   │   ├── Commande.class
+    │   │   ├── CommandeConnexion.class
+    │   │   ├── CommandeConnMAJ.class
+    │   │   ├── CommandeConnMAJValid.class
+    │   │   ├── CommandeDeconnect.class
+    │   │   ├── CommandeErreurDroit.class
+    │   │   ├── CommandeServeur.class
+    │   │   ├── CommandeServMAJ.class
+    │   │   ├── CommandeServMAJValid.class
+    │   │   ├── CommandeSupprConnexion.class
+    │   │   ├── CommandeSupprServeur.class
+    │   │   ├── CommandeSupprUtilisateur.class
+    │   │   ├── CommandeUtil.class
+    │   │   ├── CommandeUtilisateurMAJ.class
+    │   │   ├── CommandeUtilMAJ.class
+    │   │   ├── CommandeUtilMAJValid.class
+    │   │   ├── CommandeUtils.class
+    │   │   ├── CommandeVerifLogin.class
+    │   │   └── NullCommande.class
+    │   ├── ControleSession.class
+    │   └── Controleur.class
+    ├── lib
+    │   └── postgresql-42.2.5.jre6.jar
+    └── web.xml
+
+8 directories, 52 files
